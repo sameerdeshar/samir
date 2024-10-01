@@ -56,17 +56,17 @@ ignoreErrors = ["additional-script-loading-error"] # ignore error of loading add
     # The page reference (pageRef) is useful for menu highlighting
     # When pageRef is set, setting `url` is optional; it will be used as a fallback if the page is not found.
     pageRef="/"
-    name = 'Home'
+    name = '/home'
     url = '/'
     weight = 10
   [[Languages.en-gb.menu.main]]
     pageRef="posts"
-    name = 'Posts'
+    name = '/etc/posts'
     url = '/posts/'
     weight = 20
   [[Languages.en-gb.menu.main]]
     pageRef="about"
-    name = 'About'
+    name = '> whoami'
     url = '/about/'
     weight = 30
 
@@ -97,7 +97,7 @@ ignoreErrors = ["additional-script-loading-error"] # ignore error of loading add
   avatar = "avatar.jpg" # put the file in assets folder; also ensure that image has same height and width
   # Note: image is not rendered if the resource(avatar image) is not found. No error is displayed.
   intro = "THIS IS.."
-  name = "Sidharth R"
+  name = "SAMIR DOn"
   description = "A fast, minimalistic Hugo theme with light and dark mode support, for running a personal site or blog."
 
 # Allow to override webmanifest options
