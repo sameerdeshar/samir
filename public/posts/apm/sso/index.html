@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en-gb"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="content-type" content="text/html">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title itemprop="name">HOW DOES HALF PROXY WORK | THIS IS</title>
+<meta property="og:title" content="HOW DOES HALF PROXY WORK | THIS IS" />
+<meta name="twitter:title" content="HOW DOES HALF PROXY WORK | THIS IS" />
+<meta itemprop="name" content="HOW DOES HALF PROXY WORK | THIS IS" />
+<meta name="application-name" content="HOW DOES HALF PROXY WORK | THIS IS" />
+<meta property="og:site_name" content="THIS IS..." />
+
+<meta name="description" content="Let&#39;s learn how the half proxy works.">
+<meta itemprop="description" content="Let&#39;s learn how the half proxy works." />
+<meta property="og:description" content="Let&#39;s learn how the half proxy works." />
+<meta name="twitter:description" content="Let&#39;s learn how the half proxy works." />
+
+<meta property="og:locale" content="en-gb" />
+<meta name="language" content="en-gb" />
+
+  <link rel="alternate" hreflang="en-gb" href="http://localhost:1313/posts/apm/sso/" title="English" />
+
+
+
+
+
+    
+    
+    
+
+    <meta property="og:type" content="article" />
+    <meta property="og:article:published_time" content=2024-10-18T00:00:00Z />
+    <meta property="article:published_time" content=2024-10-18T00:00:00Z />
+    <meta property="og:url" content="http://localhost:1313/posts/apm/sso/" />
+
+    
+    <meta property="og:article:author" content="SAMIR DOn" />
+    <meta property="article:author" content="SAMIR DOn" />
+    <meta name="author" content="SAMIR DOn" />
+    
+    
+
+    
+
+    <script defer type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "Article",
+        "headline": "HOW DOES HALF PROXY WORK",
+        "author": {
+        "@type": "Person",
+        "name": ""
+        },
+        "datePublished": "2024-10-18",
+        "description": "Let's learn how the half proxy works.",
+        "wordCount":  1239 ,
+        "mainEntityOfPage": "True",
+        "dateModified": "2024-10-18",
+        "image": {
+        "@type": "imageObject",
+        "url": ""
+        },
+        "publisher": {
+        "@type": "Organization",
+        "name": "THIS IS"
+        }
+    }
+    </script>
+
+
+<meta name="generator" content="Hugo 0.135.0">
+
+    
+    <meta property="og:url" content="http://localhost:1313/posts/apm/sso/">
+  <meta property="og:site_name" content="THIS IS">
+  <meta property="og:title" content="HOW DOES HALF PROXY WORK">
+  <meta property="og:description" content="Let&#39;s learn how the half proxy works.">
+  <meta property="og:locale" content="en_gb">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-10-18T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-10-18T00:00:00+00:00">
+    <meta property="article:tag" content="Authentication">
+    <meta property="article:tag" content="Sso">
+    <meta property="article:tag" content="Saml">
+    <meta property="article:tag" content="Signautres">
+
+
+    
+    
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="HOW DOES HALF PROXY WORK">
+  <meta name="twitter:description" content="Let&#39;s learn how the half proxy works.">
+
+
+    
+
+    <link rel="canonical" href="http://localhost:1313/posts/apm/sso/">
+    <link href="/style.min.a94d01c45d6488cf633cab302d6fbee459506be059c518b594c69097e4570aeb.css" rel="stylesheet">
+    <link href="/code-highlight.min.706d31975fec544a864cb7f0d847a73ea55ca1df91bf495fd12a177138d807cf.css" rel="stylesheet">
+
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+    <link rel="mask-icon" href="/icons/safari-pinned-tab.svg">
+    <link rel="shortcut icon" href="/favicon.ico">
+
+
+
+
+<link rel="manifest" href="http://localhost:1313/site.webmanifest">
+
+<meta name="msapplication-config" content="/browserconfig.xml">
+<meta name="msapplication-TileColor" content="#2d89ef">
+<meta name="theme-color" content="#434648">
+
+    
+    <link rel="icon" type="image/svg+xml" href="/icons/favicon.svg">
+
+    <script src="../../assets/js/copyCode.js"></script>
+</head>
+<body data-theme = "dark" class="notransition">
+
+<script src="/js/theme.js"></script>
+
+<div class="navbar" role="navigation">
+    <nav class="menu" aria-label="Main Navigation">
+        <a href="http://localhost:1313/" class="logo">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" 
+viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" 
+stroke-linejoin="round" class="feather feather-home">
+<title>Home</title>
+<path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+<polyline points="9 22 9 12 15 12 15 22"></polyline>
+</svg>
+        </a>
+        <input type="checkbox" id="menu-trigger" class="menu-trigger" />
+        <label for="menu-trigger">
+            <span class="menu-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" stroke="currentColor" fill="none" viewBox="0 0 14 14"><title>Menu</title><path stroke-linecap="round" stroke-linejoin="round" d="M10.595 7L3.40726 7"></path><path stroke-linecap="round" stroke-linejoin="round" d="M10.5096 3.51488L3.49301 3.51488"></path><path stroke-linecap="round" stroke-linejoin="round" d="M10.5096 10.4851H3.49301"></path><path stroke-linecap="round" stroke-linejoin="round" d="M0.5 12.5V1.5C0.5 0.947715 0.947715 0.5 1.5 0.5H12.5C13.0523 0.5 13.5 0.947715 13.5 1.5V12.5C13.5 13.0523 13.0523 13.5 12.5 13.5H1.5C0.947715 13.5 0.5 13.0523 0.5 12.5Z"></path></svg>
+            </span>
+        </label>
+
+        <div class="trigger">
+            <ul class="trigger-container">
+                
+                
+                <li>
+                    <a class="menu-link " href="/">
+                        /home
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    <a class="menu-link active" href="/posts/">
+                        /etc/posts
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    <a class="menu-link " href="/pages/about/">
+                        &gt; whoami
+                    </a>
+                    
+                </li>
+                
+                <li class="menu-separator">
+                    <span>|</span>
+                </li>
+                
+                
+            </ul>
+            <a id="mode" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" class="mode-sunny" width="21" height="21" viewBox="0 0 14 14" stroke-width="1">
+<title>LIGHT</title><g><circle cx="7" cy="7" r="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></circle><line x1="7" y1="0.5" x2="7" y2="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="2.4" x2="3.82" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="0.5" y1="7" x2="2.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="11.6" x2="3.82" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="7" y1="13.5" x2="7" y2="11.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="11.6" x2="10.18" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="13.5" y1="7" x2="11.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="2.4" x2="10.18" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line></g></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="mode-moon" width="21" height="21" viewBox="0 0 14 14" stroke-width="1">
+<title>DARK</title><g><circle cx="7" cy="7" r="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></circle><line x1="7" y1="0.5" x2="7" y2="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="2.4" x2="3.82" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="0.5" y1="7" x2="2.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="11.6" x2="3.82" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="7" y1="13.5" x2="7" y2="11.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="11.6" x2="10.18" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="13.5" y1="7" x2="11.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="2.4" x2="10.18" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line></g></svg>
+            </a>
+        </div>
+    </nav>
+</div>
+
+<div class="wrapper post">
+    <main class="page-content" aria-label="Content">
+        <article>
+            <header class="header">
+                <h1 class="header-title">HOW DOES HALF PROXY WORK</h1>
+                
+                
+                
+                <div class="post-meta">
+                    <time datetime="2024-10-18T00:00:00&#43;00:00" itemprop="datePublished"> 18 Oct 2024 </time>
+                </div>
+                
+            </header>
+            
+    
+    <details class="toc" ZgotmplZ>
+        <summary><b>Table of Contents</b></summary>
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#how-sso-works">How SSO Works</a>
+      <ul>
+        <li><a href="#different-protocols-used-in-sso">Different Protocols Used in SSO:</a></li>
+      </ul>
+    </li>
+    <li><a href="#saml-security-assertion-markup-language">SAML (Security Assertion Markup Language)</a>
+      <ul>
+        <li><a href="#key-components">Key Components</a></li>
+        <li><a href="#saml-assertion">SAML Assertion</a></li>
+        <li><a href="#saml-workflow">SAML Workflow</a>
+          <ul>
+            <li><a href="#1-sp-initiated-flow">1. SP-Initiated Flow:</a></li>
+            <li><a href="#2-idp-initiated-flow">2. IdP-Initiated Flow:</a></li>
+          </ul>
+        </li>
+        <li><a href="#saml-protocols">SAML Protocols</a></li>
+        <li><a href="#saml-bindings">SAML Bindings</a></li>
+      </ul>
+    </li>
+    <li><a href="#in-depth-security-in-saml">In-depth Security in SAML</a>
+      <ul>
+        <li><a href="#1-digital-signatures">1. <strong>Digital Signatures</strong></a></li>
+        <li><a href="#2-encryption">2. <strong>Encryption</strong></a></li>
+        <li><a href="#3-replay-attack-prevention">3. <strong>Replay Attack Prevention</strong></a></li>
+        <li><a href="#4-mutual-authentication-between-idp-and-sp">4. <strong>Mutual Authentication Between IdP and SP</strong></a></li>
+        <li><a href="#5-single-logout-slo">5. <strong>Single Logout (SLO)</strong></a></li>
+        <li><a href="#6-transport-layer-security-tls">6. <strong>Transport Layer Security (TLS)</strong></a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </details>
+            <div class="page-content">
+                <h2 id="how-sso-works">How SSO Works</h2>
+<ol>
+<li><strong>User Logs In</strong>: The user accesses the SSO portal (or initiates login through a service provider) and enters their credentials (username and password).</li>
+<li><strong>Credential Verification</strong>: The SSO system sends the credentials to an authentication server, which could use protocols like <strong>LDAP</strong>, <strong>Active Directory (AD)</strong>, <strong>OAuth</strong>, or <strong>SAML</strong> to verify the user’s identity.</li>
+<li><strong>Authentication</strong>: The authentication server checks the credentials against a database (like AD or a cloud identity service) and either approves or denies the login request.</li>
+<li><strong>Token Issuance</strong>: If the credentials are correct, the SSO system issues an authentication token, which can be in the form of a <strong>JWT</strong>, <strong>SAML assertion</strong>, or <strong>OAuth token</strong>.</li>
+<li><strong>Accessing Applications</strong>: The user uses this token to request access to various linked applications without re-entering their credentials.</li>
+<li><strong>Application Verification</strong>: Each application the user tries to access checks the validity of the token with the SSO system or validates it locally based on the application&rsquo;s configuration.</li>
+<li><strong>Session Management</strong>: The user remains authenticated across multiple applications until the session expires or the user logs out.</li>
+</ol>
+<h3 id="different-protocols-used-in-sso">Different Protocols Used in SSO:</h3>
+<ul>
+<li><strong>SAML (Security Assertion Markup Language)</strong>: XML-based, widely used in enterprise environments for browser-based SSO.</li>
+<li><strong>OAuth (Open Authorization)</strong>: Token-based, typically used in mobile and web apps for secure API access.</li>
+<li><strong>OpenID Connect (OIDC)</strong>: Built on top of OAuth 2.0, it adds an identity layer to OAuth, making it suitable for both authentication and authorization.</li>
+</ul>
+<hr>
+<h2 id="saml-security-assertion-markup-language">SAML (Security Assertion Markup Language)</h2>
+<p><strong>SAML</strong> is an <strong>XML-based protocol</strong> that enables <strong>Single Sign-On (SSO)</strong> by exchanging authentication and authorization data between two entities: the <strong>Identity Provider (IdP)</strong> and the <strong>Service Provider (SP)</strong>. It is commonly used in enterprise environments to allow users to access multiple web applications without having to log in repeatedly.</p>
+<h3 id="key-components">Key Components</h3>
+<ol>
+<li><strong>Identity Provider (IdP)</strong>: The system that authenticates the user and stores their digital identity. Examples of IdPs include <strong>Active Directory Federation Services (ADFS)</strong> or <strong>Okta</strong>.</li>
+<li><strong>Service Provider (SP)</strong>: The application or service that the user is trying to access (e.g., Salesforce, Google Apps). The SP relies on the IdP to authenticate the user.</li>
+</ol>
+<h3 id="saml-assertion">SAML Assertion</h3>
+<p>A <strong>SAML assertion</strong> is an <strong>XML document</strong> generated by the IdP, which contains the user’s identity information and authentication status. It serves as proof that the user has been authenticated.</p>
+<p>The SAML assertion includes:</p>
+<ul>
+<li><strong>Attributes</strong>: Information about the user (e.g., name, email, roles, permissions).</li>
+<li><strong>Issuer</strong>: The IdP that generated the assertion.</li>
+<li><strong>Signature</strong>: A digital signature from the IdP to ensure the assertion cannot be altered in transit.</li>
+<li><strong>Conditions</strong>: Time constraints like <strong>validity period</strong> (issue time and expiration).</li>
+<li><strong>Subject Confirmation</strong>: A mechanism ensuring that the assertion is presented by the right user.</li>
+</ul>
+<h3 id="saml-workflow">SAML Workflow</h3>
+<p>SAML operates in two major flows: <strong>SP-initiated</strong> and <strong>IdP-initiated</strong>.
+![[Pasted image 20241017123054.png]]</p>
+<h4 id="1-sp-initiated-flow">1. SP-Initiated Flow:</h4>
+<ul>
+<li><strong>Step 1</strong>: The user attempts to access an application (SP) but is not authenticated yet.</li>
+<li><strong>Step 2</strong>: The SP generates a <strong>SAML authentication request</strong> and redirects the user to the IdP.</li>
+<li><strong>Step 3</strong>: The user logs in to the IdP (if not already authenticated).</li>
+<li><strong>Step 4</strong>: Upon successful authentication, the IdP generates a <strong>SAML assertion</strong> and redirects the user back to the SP.</li>
+<li><strong>Step 5</strong>: The SP validates the SAML assertion (verifying the digital signature and expiration).</li>
+<li><strong>Step 6</strong>: If valid, the SP grants access to the user.</li>
+</ul>
+<h4 id="2-idp-initiated-flow">2. IdP-Initiated Flow:</h4>
+<ul>
+<li><strong>Step 1</strong>: The user accesses the IdP directly and logs in.</li>
+<li><strong>Step 2</strong>: After successful authentication, the IdP generates a <strong>SAML assertion</strong>.</li>
+<li><strong>Step 3</strong>: The IdP sends the SAML assertion to the SP, often via a browser redirect.</li>
+<li><strong>Step 4</strong>: The SP validates the assertion and grants access to the user.</li>
+</ul>
+<h3 id="saml-protocols">SAML Protocols</h3>
+<p>SAML consists of three main protocols:</p>
+<ol>
+<li>
+<p><strong>Authentication Request Protocol</strong>: The SP sends a request to the IdP asking for an authentication assertion.</p>
+</li>
+<li>
+<p><strong>Assertion Protocol</strong>: The IdP responds to the authentication request with an assertion, confirming whether the user is authenticated.</p>
+</li>
+<li>
+<p><strong>Artifact Resolution Protocol</strong>: A method where the IdP can send an artifact (a reference to the assertion) instead of sending the full assertion directly, improving security.</p>
+</li>
+</ol>
+<h3 id="saml-bindings">SAML Bindings</h3>
+<p>SAML supports multiple binding mechanisms, the most common of which are:</p>
+<ul>
+<li><strong>HTTP Redirect Binding</strong>: Used to pass the SAML authentication request from the SP to the IdP via an HTTP redirect.</li>
+<li><strong>HTTP POST Binding</strong>: The SAML assertion is passed back from the IdP to the SP via an HTTP POST request.</li>
+<li><strong>SOAP Binding</strong>: Used for back-channel communication between the IdP and SP. This ensures that messages are exchanged securely between them without relying on the user&rsquo;s browser.</li>
+</ul>
+<hr>
+<h2 id="in-depth-security-in-saml">In-depth Security in SAML</h2>
+<p>SAML includes robust security mechanisms to ensure the confidentiality, integrity, and authenticity of the authentication and authorization processes.</p>
+<h3 id="1-digital-signatures">1. <strong>Digital Signatures</strong></h3>
+<ul>
+<li>
+<p><strong>Purpose</strong>: Digital signatures are used to ensure the <strong>integrity</strong> and <strong>authenticity</strong> of SAML assertions and requests.</p>
+</li>
+<li>
+<p><strong>How It Works</strong>:</p>
+<ul>
+<li>The <strong>IdP digitally signs</strong> the SAML assertion using its private key.</li>
+<li>The <strong>SP validates the signature</strong> using the IdP’s public key.</li>
+<li>This process ensures that the assertion has not been tampered with during transmission and that it originated from the trusted IdP.</li>
+</ul>
+<p>Without digital signatures, attackers could alter assertions to elevate permissions, impersonate users, or extend the session&rsquo;s validity.</p>
+</li>
+</ul>
+<h3 id="2-encryption">2. <strong>Encryption</strong></h3>
+<ul>
+<li>
+<p><strong>Purpose</strong>: Encryption ensures the <strong>confidentiality</strong> of sensitive information, such as user attributes, within a SAML assertion.</p>
+</li>
+<li>
+<p><strong>How It Works</strong>:</p>
+<ul>
+<li>The IdP can encrypt parts of the SAML assertion using the <strong>SP&rsquo;s public key</strong>.</li>
+<li>Only the SP can decrypt the encrypted parts using its private key.</li>
+<li>This ensures that sensitive data, like user roles and permissions, remains confidential and secure in transit.</li>
+</ul>
+<p>While encryption of the assertion itself is optional, it is often implemented when sensitive user attributes are exchanged.</p>
+</li>
+</ul>
+<h3 id="3-replay-attack-prevention">3. <strong>Replay Attack Prevention</strong></h3>
+<ul>
+<li>
+<p><strong>Purpose</strong>: Prevent an attacker from resubmitting a SAML assertion that has already been used to gain unauthorized access.</p>
+</li>
+<li>
+<p><strong>How It Works</strong>:</p>
+<ul>
+<li>SAML assertions include <strong>timestamps</strong> that specify their <strong>validity window</strong> (usually a few minutes).</li>
+<li><strong>Nonces</strong> are used to identify requests uniquely, ensuring each assertion can be used only once.</li>
+<li>The SP checks the validity of the timestamp and ensures the assertion has not been replayed within the allowed time frame.</li>
+</ul>
+<p>By doing so, SAML prevents attackers from capturing a valid SAML assertion and reusing it later to gain unauthorized access.</p>
+</li>
+</ul>
+<h3 id="4-mutual-authentication-between-idp-and-sp">4. <strong>Mutual Authentication Between IdP and SP</strong></h3>
+<ul>
+<li><strong>Purpose</strong>: Ensure both parties (IdP and SP) are communicating securely and trust each other.</li>
+<li><strong>How It Works</strong>:
+<ul>
+<li><strong>Certificates</strong> are exchanged between the IdP and SP during the initial setup. Both parties store each other’s public keys.</li>
+<li>During communication, the IdP signs assertions, and the SP verifies them using the stored public key.</li>
+<li>This mutual authentication ensures that neither party is impersonating the other, preventing <strong>man-in-the-middle attacks</strong>.</li>
+</ul>
+</li>
+</ul>
+<h3 id="5-single-logout-slo">5. <strong>Single Logout (SLO)</strong></h3>
+<ul>
+<li><strong>Purpose</strong>: Allow users to log out from all connected applications (SPs) with one action.</li>
+<li><strong>How It Works</strong>:
+<ul>
+<li>When a user logs out from one application, the SP sends a <strong>Logout Request</strong> to the IdP.</li>
+<li>The IdP then notifies all other SPs involved in the user’s session, instructing them to log the user out as well.</li>
+<li>This centralized logout process ensures that once the user logs out from one service, they are logged out from all services connected via SSO.</li>
+</ul>
+</li>
+</ul>
+<h3 id="6-transport-layer-security-tls">6. <strong>Transport Layer Security (TLS)</strong></h3>
+<ul>
+<li><strong>Purpose</strong>: SAML messages are usually transmitted over <strong>HTTPS</strong>, ensuring the data exchanged between the IdP and SP is protected by <strong>TLS</strong>.</li>
+<li><strong>How It Works</strong>:
+<ul>
+<li>TLS provides <strong>encryption</strong>, <strong>data integrity</strong>, and <strong>server authentication</strong>, securing the communication channel.</li>
+<li>While the SAML messages themselves are signed and may be encrypted, using TLS adds an additional layer of security, protecting against network-level attacks (e.g., packet sniffing).</li>
+</ul>
+</li>
+</ul>
+
+            </div>
+        </article></main>
+</div>
+<footer class="footer">
+    <span class="footer_item"> </span>
+    &nbsp;
+
+    <div class="footer_social-icons">
+<a href="https://github.com/hugo-sid" target="_blank" rel="noopener noreferrer me"
+    title="Github">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round">
+    <path
+        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+    </path>
+</svg>
+</a>
+<a href="https://twitter.com" target="_blank" rel="noopener noreferrer me"
+    title="Twitter">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round">
+    <path
+        d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z">
+    </path>
+</svg>
+</a>
+<a href="/index.xml" target="_blank" rel="noopener noreferrer me"
+    title="Rss">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round">
+    <path d="M4 11a9 9 0 0 1 9 9" />
+    <path d="M4 4a16 16 0 0 1 16 16" />
+    <circle cx="5" cy="19" r="1" />
+</svg>
+</a>
+</div>
+    <small class="footer_copyright">
+        © 2024 SAMIR DOn.
+        Powered by <a href="https://github.com/hugo-sid/hugo-blog-awesome" target="_blank" rel="noopener">Hugo blog awesome</a>.
+    </small>
+</footer><a href="#" title="Go to top" id="totop">
+    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" stroke="currentColor" viewBox="0 96 960 960">
+    <path d="M283 704.739 234.261 656 480 410.261 725.739 656 677 704.739l-197-197-197 197Z"/>
+</svg>
+
+</a>
+
+
+    
+
+
+
+
+    
+    
+        
+    
+
+    
+    
+        
+    
+
+
+
+    
+    <script async src="http://localhost:1313/js/main.js" ></script>
+
+    
+
+</body>
+</html>

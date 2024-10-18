@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Home on THIS IS</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content in Home on THIS IS</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Fri, 18 Oct 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>HOW DOES HALF PROXY WORK</title>
+      <link>http://localhost:1313/posts/apm/oauth/</link>
+      <pubDate>Fri, 18 Oct 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/apm/oauth/</guid>
+      
+      <description>&lt;p&gt;&lt;strong&gt;OAuth&lt;/strong&gt; is a method for authorization that allows access to third-party applications or services without requiring the sharing of usernames and passwords.&lt;/p&gt;
+&lt;h2 id=&#34;how-oauth-20-works&#34;&gt;How OAuth 2.0 Works?&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;OAuth 2.0&lt;/strong&gt; is an authorization protocol designed to provide secure delegated access to resources without exposing user credentials to third-party applications.&lt;/p&gt;
+&lt;h3 id=&#34;key-components&#34;&gt;&lt;strong&gt;Key Components&lt;/strong&gt;:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Resource Owner&lt;/strong&gt;: The user who owns the data or resource.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Client&lt;/strong&gt;: The application requesting access to the user’s resource on behalf of the user (e.g., a web or mobile app).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Resource Server&lt;/strong&gt;: The server hosting the protected resources (e.g., an API).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Authorization Server&lt;/strong&gt;: The server that authenticates the user and issues &lt;strong&gt;access tokens&lt;/strong&gt;. This may be the same as the Resource Server.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;oauth-flows-grant-types&#34;&gt;&lt;strong&gt;OAuth Flows (Grant Types)&lt;/strong&gt;:&lt;/h3&gt;
+&lt;p&gt;OAuth 2.0 offers different authorization flows based on the type of application and security requirements.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>HOW DOES HALF PROXY WORK</title>
+      <link>http://localhost:1313/posts/apm/sso/</link>
+      <pubDate>Fri, 18 Oct 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/apm/sso/</guid>
+      
+      <description>&lt;h2 id=&#34;how-sso-works&#34;&gt;How SSO Works&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;User Logs In&lt;/strong&gt;: The user accesses the SSO portal (or initiates login through a service provider) and enters their credentials (username and password).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Credential Verification&lt;/strong&gt;: The SSO system sends the credentials to an authentication server, which could use protocols like &lt;strong&gt;LDAP&lt;/strong&gt;, &lt;strong&gt;Active Directory (AD)&lt;/strong&gt;, &lt;strong&gt;OAuth&lt;/strong&gt;, or &lt;strong&gt;SAML&lt;/strong&gt; to verify the user’s identity.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Authentication&lt;/strong&gt;: The authentication server checks the credentials against a database (like AD or a cloud identity service) and either approves or denies the login request.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Token Issuance&lt;/strong&gt;: If the credentials are correct, the SSO system issues an authentication token, which can be in the form of a &lt;strong&gt;JWT&lt;/strong&gt;, &lt;strong&gt;SAML assertion&lt;/strong&gt;, or &lt;strong&gt;OAuth token&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Accessing Applications&lt;/strong&gt;: The user uses this token to request access to various linked applications without re-entering their credentials.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Application Verification&lt;/strong&gt;: Each application the user tries to access checks the validity of the token with the SSO system or validates it locally based on the application&amp;rsquo;s configuration.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Session Management&lt;/strong&gt;: The user remains authenticated across multiple applications until the session expires or the user logs out.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;different-protocols-used-in-sso&#34;&gt;Different Protocols Used in SSO:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;SAML (Security Assertion Markup Language)&lt;/strong&gt;: XML-based, widely used in enterprise environments for browser-based SSO.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;OAuth (Open Authorization)&lt;/strong&gt;: Token-based, typically used in mobile and web apps for secure API access.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;OpenID Connect (OIDC)&lt;/strong&gt;: Built on top of OAuth 2.0, it adds an identity layer to OAuth, making it suitable for both authentication and authorization.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;saml-security-assertion-markup-language&#34;&gt;SAML (Security Assertion Markup Language)&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;SAML&lt;/strong&gt; is an &lt;strong&gt;XML-based protocol&lt;/strong&gt; that enables &lt;strong&gt;Single Sign-On (SSO)&lt;/strong&gt; by exchanging authentication and authorization data between two entities: the &lt;strong&gt;Identity Provider (IdP)&lt;/strong&gt; and the &lt;strong&gt;Service Provider (SP)&lt;/strong&gt;. It is commonly used in enterprise environments to allow users to access multiple web applications without having to log in repeatedly.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>HOW DOES HALF PROXY WORK</title>
+      <link>http://localhost:1313/posts/half-proxy/halfproxy/</link>
+      <pubDate>Fri, 18 Oct 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/half-proxy/halfproxy/</guid>
+      
+      <description>&lt;p&gt;So basically the half proxies are those that initiate connection to the proxy and forward the connection to the server. While the server repose directly back to the client.
+This is also known as DSR(Direct Server Response).&lt;/p&gt;
+&lt;h3 id=&#34;step-on-how-this-works-and-why-would-client-accept-the-response-from-a-completely-new-ip-than-the-proxy-vs-which-we-had-requested-for&#34;&gt;Step on how this works and why would client accept the response from a completely new ip than the proxy VS which we had requested for?&lt;/h3&gt;
+&lt;p&gt;Let&amp;rsquo;s assume following.
+&lt;strong&gt;CLIENT&lt;/strong&gt; -&amp;gt; 192.168.1.1
+&lt;strong&gt;VS&lt;/strong&gt;/&lt;strong&gt;PROXY&lt;/strong&gt; -&amp;gt; 10.2.0.1
+&lt;strong&gt;SERVER&lt;/strong&gt; -&amp;gt; 10.3.0.1&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Table of content</title>
+      <link>http://localhost:1313/posts/table-of-content/</link>
+      <pubDate>Tue, 02 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/table-of-content/</guid>
+      
+      <description>&lt;h2 id=&#34;table-of-content&#34;&gt;Table of content&lt;/h2&gt;
+&lt;p&gt;This theme supports displaying table of content (ToC) in blog posts.&lt;/p&gt;
+&lt;h2 id=&#34;parameters&#34;&gt;Parameters&lt;/h2&gt;
+&lt;p&gt;You can manage a ToC with two parameters:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;global &lt;code&gt;toc&lt;/code&gt; parameter;&lt;/li&gt;
+&lt;li&gt;post &lt;code&gt;toc&lt;/code&gt; parameter.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The post &lt;code&gt;toc&lt;/code&gt; parameter has higher priority than the global &lt;code&gt;toc&lt;/code&gt; parameter.&lt;/p&gt;
+&lt;h2 id=&#34;enable-table-of-content-on-all-posts&#34;&gt;Enable table of content on all posts&lt;/h2&gt;
+&lt;p&gt;To enable ToC on all posts (globally) set parameter &lt;code&gt;toc&lt;/code&gt; to &lt;code&gt;true&lt;/code&gt; in &lt;code&gt;hugo.toml&lt;/code&gt;.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-toml&#34; data-lang=&#34;toml&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;params&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;nx&#34;&gt;toc&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;kc&#34;&gt;true&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;To disable ToC globally, simply ignore the &lt;code&gt;toc&lt;/code&gt; parameter or set it to &lt;code&gt;false&lt;/code&gt;.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Math Typesetting - use Mathematical notation in blog posts</title>
+      <link>http://localhost:1313/posts/math-typesetting/</link>
+      <pubDate>Sat, 01 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/math-typesetting/</guid>
+      
+      <description>&lt;p&gt;Mathematical notation in a Hugo project can be enabled by using
+&lt;a href=&#34;https://github.com/hugo-sid/hugo-blog-awesome/blob/main/layouts/partials/helpers/katex.html&#34;&gt;third party JavaScript libraries&lt;/a&gt;.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Markdown Syntax Guide</title>
+      <link>http://localhost:1313/posts/markdown-syntax/</link>
+      <pubDate>Sat, 11 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/markdown-syntax/</guid>
+      
+      <description>&lt;p&gt;This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Rich Content</title>
+      <link>http://localhost:1313/posts/rich-content/</link>
+      <pubDate>Thu, 09 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/rich-content/</guid>
+      
+      <description>&lt;p&gt;Hugo ships with several &lt;a href=&#34;https://gohugo.io/content-management/shortcodes/#use-hugos-built-in-shortcodes&#34;&gt;Built-in Shortcodes&lt;/a&gt; for rich content, along with a &lt;a href=&#34;https://gohugo.io/about/hugo-and-gdpr/&#34;&gt;Privacy Config&lt;/a&gt; and a set of Simple Shortcodes that enable static and no-JS versions of various social media embeds.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Placeholder Text</title>
+      <link>http://localhost:1313/posts/placeholder-text/</link>
+      <pubDate>Tue, 07 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/placeholder-text/</guid>
+      
+      <description>&lt;p&gt;Lorem est tota propiore conpellat pectoribus de pectora summo.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Emoji Support</title>
+      <link>http://localhost:1313/posts/emoji-support/</link>
+      <pubDate>Wed, 01 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/emoji-support/</guid>
+      
+      <description>&lt;p&gt;Emoji can be enabled in a Hugo project in a number of ways.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>http://localhost:1313/pages/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/pages/about/</guid>
+      
+      <description>&lt;p&gt;Written in Go, Hugo is an open source static site generator available under the &lt;a href=&#34;https://github.com/gohugoio/hugo/blob/master/LICENSE&#34;&gt;Apache Licence 2.0.&lt;/a&gt; Hugo supports TOML, YAML and JSON data file types, Markdown and HTML content files and uses shortcodes to add rich content. Other notable features are taxonomies, multilingual mode, image processing, custom output formats, HTML/CSS/JS minification and support for Sass SCSS workflows.&lt;/p&gt;
+&lt;p&gt;Hugo makes use of a variety of open source projects including:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/yuin/goldmark&#34;&gt;https://github.com/yuin/goldmark&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/alecthomas/chroma&#34;&gt;https://github.com/alecthomas/chroma&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/muesli/smartcrop&#34;&gt;https://github.com/muesli/smartcrop&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/spf13/cobra&#34;&gt;https://github.com/spf13/cobra&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/spf13/viper&#34;&gt;https://github.com/spf13/viper&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Hugo is ideal for blogs, corporate websites, creative portfolios, online magazines, single page applications or even a website with thousands of pages.&lt;/p&gt;</description>
+      
+    </item>
+    
+  </channel>
+</rss>

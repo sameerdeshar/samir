@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>OAuth on THIS IS</title>
+    <link>http://localhost:1313/tags/oauth/</link>
+    <description>Recent content in OAuth on THIS IS</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Fri, 18 Oct 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/oauth/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>HOW DOES HALF PROXY WORK</title>
+      <link>http://localhost:1313/posts/apm/oauth/</link>
+      <pubDate>Fri, 18 Oct 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/apm/oauth/</guid>
+      
+      <description>&lt;p&gt;&lt;strong&gt;OAuth&lt;/strong&gt; is a method for authorization that allows access to third-party applications or services without requiring the sharing of usernames and passwords.&lt;/p&gt;
+&lt;h2 id=&#34;how-oauth-20-works&#34;&gt;How OAuth 2.0 Works?&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;OAuth 2.0&lt;/strong&gt; is an authorization protocol designed to provide secure delegated access to resources without exposing user credentials to third-party applications.&lt;/p&gt;
+&lt;h3 id=&#34;key-components&#34;&gt;&lt;strong&gt;Key Components&lt;/strong&gt;:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Resource Owner&lt;/strong&gt;: The user who owns the data or resource.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Client&lt;/strong&gt;: The application requesting access to the user’s resource on behalf of the user (e.g., a web or mobile app).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Resource Server&lt;/strong&gt;: The server hosting the protected resources (e.g., an API).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Authorization Server&lt;/strong&gt;: The server that authenticates the user and issues &lt;strong&gt;access tokens&lt;/strong&gt;. This may be the same as the Resource Server.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;oauth-flows-grant-types&#34;&gt;&lt;strong&gt;OAuth Flows (Grant Types)&lt;/strong&gt;:&lt;/h3&gt;
+&lt;p&gt;OAuth 2.0 offers different authorization flows based on the type of application and security requirements.&lt;/p&gt;</description>
+      
+    </item>
+    
+  </channel>
+</rss>

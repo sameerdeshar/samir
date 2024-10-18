@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Signautres on THIS IS</title>
+    <link>http://localhost:1313/tags/signautres/</link>
+    <description>Recent content in Signautres on THIS IS</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Fri, 18 Oct 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/signautres/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>HOW DOES HALF PROXY WORK</title>
+      <link>http://localhost:1313/posts/apm/sso/</link>
+      <pubDate>Fri, 18 Oct 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/apm/sso/</guid>
+      
+      <description>&lt;h2 id=&#34;how-sso-works&#34;&gt;How SSO Works&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;User Logs In&lt;/strong&gt;: The user accesses the SSO portal (or initiates login through a service provider) and enters their credentials (username and password).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Credential Verification&lt;/strong&gt;: The SSO system sends the credentials to an authentication server, which could use protocols like &lt;strong&gt;LDAP&lt;/strong&gt;, &lt;strong&gt;Active Directory (AD)&lt;/strong&gt;, &lt;strong&gt;OAuth&lt;/strong&gt;, or &lt;strong&gt;SAML&lt;/strong&gt; to verify the user’s identity.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Authentication&lt;/strong&gt;: The authentication server checks the credentials against a database (like AD or a cloud identity service) and either approves or denies the login request.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Token Issuance&lt;/strong&gt;: If the credentials are correct, the SSO system issues an authentication token, which can be in the form of a &lt;strong&gt;JWT&lt;/strong&gt;, &lt;strong&gt;SAML assertion&lt;/strong&gt;, or &lt;strong&gt;OAuth token&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Accessing Applications&lt;/strong&gt;: The user uses this token to request access to various linked applications without re-entering their credentials.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Application Verification&lt;/strong&gt;: Each application the user tries to access checks the validity of the token with the SSO system or validates it locally based on the application&amp;rsquo;s configuration.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Session Management&lt;/strong&gt;: The user remains authenticated across multiple applications until the session expires or the user logs out.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;different-protocols-used-in-sso&#34;&gt;Different Protocols Used in SSO:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;SAML (Security Assertion Markup Language)&lt;/strong&gt;: XML-based, widely used in enterprise environments for browser-based SSO.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;OAuth (Open Authorization)&lt;/strong&gt;: Token-based, typically used in mobile and web apps for secure API access.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;OpenID Connect (OIDC)&lt;/strong&gt;: Built on top of OAuth 2.0, it adds an identity layer to OAuth, making it suitable for both authentication and authorization.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;saml-security-assertion-markup-language&#34;&gt;SAML (Security Assertion Markup Language)&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;SAML&lt;/strong&gt; is an &lt;strong&gt;XML-based protocol&lt;/strong&gt; that enables &lt;strong&gt;Single Sign-On (SSO)&lt;/strong&gt; by exchanging authentication and authorization data between two entities: the &lt;strong&gt;Identity Provider (IdP)&lt;/strong&gt; and the &lt;strong&gt;Service Provider (SP)&lt;/strong&gt;. It is commonly used in enterprise environments to allow users to access multiple web applications without having to log in repeatedly.&lt;/p&gt;</description>
+      
+    </item>
+    
+  </channel>
+</rss>

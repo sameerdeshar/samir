@@ -35,14 +35,18 @@ ignoreErrors = ["additional-script-loading-error"] # ignore error of loading add
 
 # set markup.highlight.noClasses=false to enable code highlight
 [markup]
-  [markup.highlight]
-    noClasses = false
   [markup.goldmark.renderer]
     unsafe = true
 	[markup.tableOfContents]
 		startLevel = 2 # ToC starts from H2
 		endLevel = 4 # ToC ends at H4
 		ordered = false # generates <ul> instead of <ol>
+  [markup.highlight]
+    noClasses = false
+    codeFences = true
+    guessSyntax = true
+    lineNoStart = 1
+    lineNumbersInTable = false
 
 ############################## English language ################################
 [Languages.en-gb]
