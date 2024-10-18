@@ -1,7 +1,7 @@
-title = "THIS IS"
+title = "Samir Deshar"
 baseURL = 'https://samirdeshar.com.np/'
 
-# This is what goes in <html lang="">
+# SAMIR DESHAR what goes in <html lang="">
 languageCode = 'en-us'
 
 # This defines how dates are formatted
@@ -75,7 +75,7 @@ ignoreErrors = ["additional-script-loading-error"] # ignore error of loading add
     weight = 30
 
 [Languages.en-gb.params]
-  sitename = "THIS IS..."
+  sitename = "Samir Deshar"
   defaultColor = "dark" # set color mode: dark, light, auto
   # Setting it to 'auto' applies the color scheme based on the visitor's device color preference.If you don't specify anything, ignore this parameter, or leave it blank,
   # the default value is set to 'auto'.
@@ -100,14 +100,14 @@ ignoreErrors = ["additional-script-loading-error"] # ignore error of loading add
 [Languages.en-gb.params.author]
   avatar = "avatar.jpg" # put the file in assets folder; also ensure that image has same height and width
   # Note: image is not rendered if the resource(avatar image) is not found. No error is displayed.
-  intro = "THIS IS.."
-  name = "SAMIR DOn"
-  description = "A fast, minimalistic Hugo theme with light and dark mode support, for running a personal site or blog."
+  intro = "SAMIR DESHAR.."
+  name = "SAMIR DESHAR"
+  description = "LEARNING AND SHARING"
 
 # Allow to override webmanifest options
 [Languages.en-gb.params.webmanifest]
-  name = "THIS IS" # will use "params.sitename" or "title" by default
-  short_name = "THIS IS" # same as name
+  name = "SAMIR DESHAR" # will use "params.sitename" or "title" by default
+  short_name = "SAMIR DESHAR" # same as name
   start_url = "/" # will use homepage url by default
   theme_color = "#434648" # default is "#434648" (base color of text). Also will override html `<meta name="theme-color" />`
   background_color = "#fff" # by default depend on "params.defaultColor" for "light" or "auto" will be set to "#fff" for dark will be "#131418" (color of dark mode background)

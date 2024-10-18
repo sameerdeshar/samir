@@ -1,5 +1,5 @@
 ---
-title: HOW DOES HALF PROXY WORK
+title: OAuth Working
 date: 2024-10-18
 description: "Let's learn how the half proxy works."
 author: Samir Deshar

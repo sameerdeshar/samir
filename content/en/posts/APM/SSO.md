@@ -1,5 +1,5 @@
 ---
-title: HOW DOES HALF PROXY WORK
+title: How SSO works? 
 date: 2024-10-18
 description: "Let's learn how the half proxy works."
 author: Samir Deshar
@@ -10,7 +10,6 @@ tags:
   - saml
   - signautres
 ---
-## How SSO Works
 
 1. **User Logs In**: The user accesses the SSO portal (or initiates login through a service provider) and enters their credentials (username and password).
 2. **Credential Verification**: The SSO system sends the credentials to an authentication server, which could use protocols like **LDAP**, **Active Directory (AD)**, **OAuth**, or **SAML** to verify the user’s identity.

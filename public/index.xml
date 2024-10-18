@@ -1,43 +1,37 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Home on THIS IS</title>
+    <title>Home on Samir Deshar</title>
     <link>http://localhost:1313/</link>
-    <description>Recent content in Home on THIS IS</description>
+    <description>Recent content in Home on Samir Deshar</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     <lastBuildDate>Fri, 18 Oct 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>HOW DOES HALF PROXY WORK</title>
-      <link>http://localhost:1313/posts/apm/oauth/</link>
+      <link>http://localhost:1313/posts/half-proxy/halfproxy/</link>
       <pubDate>Fri, 18 Oct 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/apm/oauth/</guid>
+      <guid>http://localhost:1313/posts/half-proxy/halfproxy/</guid>
       
-      <description>&lt;p&gt;&lt;strong&gt;OAuth&lt;/strong&gt; is a method for authorization that allows access to third-party applications or services without requiring the sharing of usernames and passwords.&lt;/p&gt;
-&lt;h2 id=&#34;how-oauth-20-works&#34;&gt;How OAuth 2.0 Works?&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;OAuth 2.0&lt;/strong&gt; is an authorization protocol designed to provide secure delegated access to resources without exposing user credentials to third-party applications.&lt;/p&gt;
-&lt;h3 id=&#34;key-components&#34;&gt;&lt;strong&gt;Key Components&lt;/strong&gt;:&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Resource Owner&lt;/strong&gt;: The user who owns the data or resource.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Client&lt;/strong&gt;: The application requesting access to the user’s resource on behalf of the user (e.g., a web or mobile app).&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Resource Server&lt;/strong&gt;: The server hosting the protected resources (e.g., an API).&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Authorization Server&lt;/strong&gt;: The server that authenticates the user and issues &lt;strong&gt;access tokens&lt;/strong&gt;. This may be the same as the Resource Server.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;oauth-flows-grant-types&#34;&gt;&lt;strong&gt;OAuth Flows (Grant Types)&lt;/strong&gt;:&lt;/h3&gt;
-&lt;p&gt;OAuth 2.0 offers different authorization flows based on the type of application and security requirements.&lt;/p&gt;</description>
+      <description>&lt;p&gt;So basically the half proxies are those that initiate connection to the proxy and forward the connection to the server. While the server repose directly back to the client.
+This is also known as DSR(Direct Server Response).&lt;/p&gt;
+&lt;h3 id=&#34;step-on-how-this-works-and-why-would-client-accept-the-response-from-a-completely-new-ip-than-the-proxy-vs-which-we-had-requested-for&#34;&gt;Step on how this works and why would client accept the response from a completely new ip than the proxy VS which we had requested for?&lt;/h3&gt;
+&lt;p&gt;Let&amp;rsquo;s assume following.
+&lt;strong&gt;CLIENT&lt;/strong&gt; -&amp;gt; 192.168.1.1
+&lt;strong&gt;VS&lt;/strong&gt;/&lt;strong&gt;PROXY&lt;/strong&gt; -&amp;gt; 10.2.0.1
+&lt;strong&gt;SERVER&lt;/strong&gt; -&amp;gt; 10.3.0.1&lt;/p&gt;</description>
       
     </item>
     
     <item>
-      <title>HOW DOES HALF PROXY WORK</title>
+      <title>How SSO works?</title>
       <link>http://localhost:1313/posts/apm/sso/</link>
       <pubDate>Fri, 18 Oct 2024 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/posts/apm/sso/</guid>
       
-      <description>&lt;h2 id=&#34;how-sso-works&#34;&gt;How SSO Works&lt;/h2&gt;
-&lt;ol&gt;
+      <description>&lt;ol&gt;
 &lt;li&gt;&lt;strong&gt;User Logs In&lt;/strong&gt;: The user accesses the SSO portal (or initiates login through a service provider) and enters their credentials (username and password).&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Credential Verification&lt;/strong&gt;: The SSO system sends the credentials to an authentication server, which could use protocols like &lt;strong&gt;LDAP&lt;/strong&gt;, &lt;strong&gt;Active Directory (AD)&lt;/strong&gt;, &lt;strong&gt;OAuth&lt;/strong&gt;, or &lt;strong&gt;SAML&lt;/strong&gt; to verify the user’s identity.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Authentication&lt;/strong&gt;: The authentication server checks the credentials against a database (like AD or a cloud identity service) and either approves or denies the login request.&lt;/li&gt;
@@ -59,19 +53,24 @@
     </item>
     
     <item>
-      <title>HOW DOES HALF PROXY WORK</title>
-      <link>http://localhost:1313/posts/half-proxy/halfproxy/</link>
+      <title>OAuth Working</title>
+      <link>http://localhost:1313/posts/apm/oauth/</link>
       <pubDate>Fri, 18 Oct 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/half-proxy/halfproxy/</guid>
+      <guid>http://localhost:1313/posts/apm/oauth/</guid>
       
-      <description>&lt;p&gt;So basically the half proxies are those that initiate connection to the proxy and forward the connection to the server. While the server repose directly back to the client.
-This is also known as DSR(Direct Server Response).&lt;/p&gt;
-&lt;h3 id=&#34;step-on-how-this-works-and-why-would-client-accept-the-response-from-a-completely-new-ip-than-the-proxy-vs-which-we-had-requested-for&#34;&gt;Step on how this works and why would client accept the response from a completely new ip than the proxy VS which we had requested for?&lt;/h3&gt;
-&lt;p&gt;Let&amp;rsquo;s assume following.
-&lt;strong&gt;CLIENT&lt;/strong&gt; -&amp;gt; 192.168.1.1
-&lt;strong&gt;VS&lt;/strong&gt;/&lt;strong&gt;PROXY&lt;/strong&gt; -&amp;gt; 10.2.0.1
-&lt;strong&gt;SERVER&lt;/strong&gt; -&amp;gt; 10.3.0.1&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;strong&gt;OAuth&lt;/strong&gt; is a method for authorization that allows access to third-party applications or services without requiring the sharing of usernames and passwords.&lt;/p&gt;
+&lt;h2 id=&#34;how-oauth-20-works&#34;&gt;How OAuth 2.0 Works?&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;OAuth 2.0&lt;/strong&gt; is an authorization protocol designed to provide secure delegated access to resources without exposing user credentials to third-party applications.&lt;/p&gt;
+&lt;h3 id=&#34;key-components&#34;&gt;&lt;strong&gt;Key Components&lt;/strong&gt;:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Resource Owner&lt;/strong&gt;: The user who owns the data or resource.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Client&lt;/strong&gt;: The application requesting access to the user’s resource on behalf of the user (e.g., a web or mobile app).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Resource Server&lt;/strong&gt;: The server hosting the protected resources (e.g., an API).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Authorization Server&lt;/strong&gt;: The server that authenticates the user and issues &lt;strong&gt;access tokens&lt;/strong&gt;. This may be the same as the Resource Server.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;oauth-flows-grant-types&#34;&gt;&lt;strong&gt;OAuth Flows (Grant Types)&lt;/strong&gt;:&lt;/h3&gt;
+&lt;p&gt;OAuth 2.0 offers different authorization flows based on the type of application and security requirements.&lt;/p&gt;</description>
       
     </item>
     
