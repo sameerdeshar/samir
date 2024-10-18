@@ -66,9 +66,3 @@ STEPS:
     - The VS IP is used for both forwarding the request and as the source of the server’s response, even though the response is sent directly from the server to the client.
 3. **Direct Server Response:**
     - The server bypasses the proxy for responses, reducing the proxy’s load and improving response times.
-
-> this is
-
-```bash
-sudo apt install hello
-```
