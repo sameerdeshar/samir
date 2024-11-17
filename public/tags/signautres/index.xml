@@ -8,14 +8,13 @@
     <language>en-gb</language>
     <lastBuildDate>Fri, 18 Oct 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/signautres/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>HOW DOES HALF PROXY WORK</title>
+      <title>How SSO works?</title>
       <link>http://localhost:1313/posts/apm/sso/</link>
       <pubDate>Fri, 18 Oct 2024 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/posts/apm/sso/</guid>
       
-      <description>&lt;h2 id=&#34;how-sso-works&#34;&gt;How SSO Works&lt;/h2&gt;
-&lt;ol&gt;
+      <description>&lt;ol&gt;
 &lt;li&gt;&lt;strong&gt;User Logs In&lt;/strong&gt;: The user accesses the SSO portal (or initiates login through a service provider) and enters their credentials (username and password).&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Credential Verification&lt;/strong&gt;: The SSO system sends the credentials to an authentication server, which could use protocols like &lt;strong&gt;LDAP&lt;/strong&gt;, &lt;strong&gt;Active Directory (AD)&lt;/strong&gt;, &lt;strong&gt;OAuth&lt;/strong&gt;, or &lt;strong&gt;SAML&lt;/strong&gt; to verify the user’s identity.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Authentication&lt;/strong&gt;: The authentication server checks the credentials against a database (like AD or a cloud identity service) and either approves or denies the login request.&lt;/li&gt;
