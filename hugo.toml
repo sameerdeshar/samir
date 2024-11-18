@@ -98,7 +98,7 @@ ignoreErrors = ["additional-script-loading-error"] # ignore error of loading add
   # By default (or if nothing is specified), summary is used.
 
 [Languages.en-gb.params.author]
-  avatar = "avatar.jpg" # put the file in assets folder; also ensure that image has same height and width
+  avatar = "onepiece.png" # put the file in assets folder; also ensure that image has same height and width
   # Note: image is not rendered if the resource(avatar image) is not found. No error is displayed.
   intro = "SAMIR DESHAR.."
   name = "SAMIR DESHAR"
