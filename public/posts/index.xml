@@ -6,7 +6,50 @@
     <description>Recent content in Posts on Samir Deshar</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
-    <lastBuildDate>Fri, 18 Oct 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 19 Nov 2024 12:03:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CURL Cheatsheet</title>
+      <link>http://localhost:1313/posts/apm/curl/</link>
+      <pubDate>Tue, 19 Nov 2024 12:03:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/apm/curl/</guid>
+      
+      <description>&lt;h3 id=&#34;save-output-to-a-file&#34;&gt;&lt;strong&gt;Save Output to a File&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Command:&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;curl -o output.html http://example.com
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;What it does:&lt;/strong&gt;&lt;br&gt;
+Saves the content of the webpage to a file named &lt;code&gt;output.html&lt;/code&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;follow-redirects&#34;&gt;&lt;strong&gt;Follow Redirects&lt;/strong&gt;&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;curl -L http://example.com
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;What it does:&lt;/strong&gt;&lt;br&gt;
+Follows any HTTP redirects and fetches the final destination page.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;show-http-headers&#34;&gt;&lt;strong&gt;Show HTTP Headers&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Command:&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;curl -I http://example.com
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;What it does:&lt;/strong&gt;&lt;br&gt;
+Displays only the HTTP headers (e.g., status code, content type) of the requested page.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;download-a-file&#34;&gt;&lt;strong&gt;Download a File&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Command:&lt;/strong&gt;&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Understanding DNS : How the Internet Knows Where to Go</title>
+      <link>http://localhost:1313/posts/dns/dns/</link>
+      <pubDate>Tue, 19 Nov 2024 12:03:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/dns/dns/</guid>
+      
+      <description>&lt;h3 id=&#34;understanding-dns--how-the-internet-knows-where-to-go&#34;&gt;&lt;strong&gt;Understanding DNS : How the Internet Knows Where to Go&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;The &lt;strong&gt;Domain Name System (DNS)&lt;/strong&gt; is like the internet&amp;rsquo;s phonebook. It helps translate human-friendly domain names (e.g., &lt;code&gt;samirdeshar.com.np&lt;/code&gt;) into machine-friendly IP addresses (e.g., &lt;code&gt;172.66.44.181&lt;/code&gt;) so computers can find and connect to websites or services.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;what-is-dns&#34;&gt;&lt;strong&gt;What Is DNS?&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;Imagine if you had to memorize IP addresses like &lt;code&gt;172.66.44.181&lt;/code&gt; every time you wanted to visit a website. That would be difficult! DNS solves this by associating domain names with their respective IP addresses. It works in the background whenever you access a website, send an email, or use an online service.&lt;/p&gt;</description>
+      
+    </item>
+    
     <item>
       <title>HOW DOES HALF PROXY WORK</title>
       <link>http://localhost:1313/posts/half-proxy/halfproxy/</link>
@@ -75,13 +118,45 @@ This is also known as DSR(Direct Server Response).&lt;/p&gt;
     </item>
     
     <item>
-      <title>Emoji Support</title>
-      <link>http://localhost:1313/posts/emoji-support/</link>
-      <pubDate>Wed, 01 Feb 2023 00:00:00 +0000</pubDate>
+      <title></title>
+      <link>http://localhost:1313/posts/curl/curl/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/emoji-support/</guid>
+      <guid>http://localhost:1313/posts/curl/curl/</guid>
       
-      <description>&lt;p&gt;Emoji can be enabled in a Hugo project in a number of ways.&lt;/p&gt;</description>
+      <description>&lt;h3 id=&#34;save-output-to-a-file&#34;&gt;&lt;strong&gt;Save Output to a File&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Command:&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;curl -o output.html http://example.com
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;What it does:&lt;/strong&gt;&lt;br&gt;
+Saves the content of the webpage to a file named &lt;code&gt;output.html&lt;/code&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;follow-redirects&#34;&gt;&lt;strong&gt;Follow Redirects&lt;/strong&gt;&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;curl -L http://example.com
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;What it does:&lt;/strong&gt;&lt;br&gt;
+Follows any HTTP redirects and fetches the final destination page.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;show-http-headers&#34;&gt;&lt;strong&gt;Show HTTP Headers&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Command:&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;curl -I http://example.com
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;What it does:&lt;/strong&gt;&lt;br&gt;
+Displays only the HTTP headers (e.g., status code, content type) of the requested page.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;download-a-file&#34;&gt;&lt;strong&gt;Download a File&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Command:&lt;/strong&gt;&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://localhost:1313/posts/learning-kerberos/learningkerberos/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/learning-kerberos/learningkerberos/</guid>
+      
+      <description>&lt;h3 id=&#34;what-is-kerberos&#34;&gt;What is Kerberos?&lt;/h3&gt;
+&lt;p&gt;Kerberos is a secure network authentication protocol, widely used as the default authentication mechanism for Microsoft Windows domains. It uses a ticket-based system and strong encryption to authenticate users and services securely. Kerberos improves on older protocols like NTLM by employing third-party ticket authorization and enhanced security measures. However, it still has exploitable vulnerabilities that attackers can leverage.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;how-does-kerberos-work&#34;&gt;How Does Kerberos Work?&lt;/h3&gt;
+&lt;p&gt;Kerberos operates as a &lt;strong&gt;Single Sign-On (SSO)&lt;/strong&gt; protocol using a ticket-based authentication scheme. The user’s password is stored as a hashed value in the Security Account Manager (SAM) database on Windows systems:&lt;/p&gt;</description>
       
     </item>
     

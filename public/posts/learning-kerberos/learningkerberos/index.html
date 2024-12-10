@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en-gb"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="content-type" content="text/html">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title itemprop="name"> | Samir Deshar</title>
+<meta property="og:title" content=" | Samir Deshar" />
+<meta name="twitter:title" content=" | Samir Deshar" />
+<meta itemprop="name" content=" | Samir Deshar" />
+<meta name="application-name" content=" | Samir Deshar" />
+<meta property="og:site_name" content="Samir Deshar" />
+
+<meta name="description" content="Minimal Hugo blog theme with light and dark mode support">
+<meta itemprop="description" content="Minimal Hugo blog theme with light and dark mode support" />
+<meta property="og:description" content="Minimal Hugo blog theme with light and dark mode support" />
+<meta name="twitter:description" content="Minimal Hugo blog theme with light and dark mode support" />
+
+<meta property="og:locale" content="en-gb" />
+<meta name="language" content="en-gb" />
+
+  <link rel="alternate" hreflang="en-gb" href="http://localhost:1313/posts/learning-kerberos/learningkerberos/" title="English" />
+
+
+
+
+
+    
+    
+    
+
+    <meta property="og:type" content="article" />
+    <meta property="og:article:published_time" content=0001-01-01T00:00:00Z />
+    <meta property="article:published_time" content=0001-01-01T00:00:00Z />
+    <meta property="og:url" content="http://localhost:1313/posts/learning-kerberos/learningkerberos/" />
+
+    
+    <meta property="og:article:author" content="SAMIR DESHAR" />
+    <meta property="article:author" content="SAMIR DESHAR" />
+    <meta name="author" content="SAMIR DESHAR" />
+    
+    
+
+    
+
+    <script defer type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "Article",
+        "headline": "",
+        "author": {
+        "@type": "Person",
+        "name": ""
+        },
+        "datePublished": "0001-01-01",
+        "description": "",
+        "wordCount":  625 ,
+        "mainEntityOfPage": "True",
+        "dateModified": "0001-01-01",
+        "image": {
+        "@type": "imageObject",
+        "url": ""
+        },
+        "publisher": {
+        "@type": "Organization",
+        "name": "Samir Deshar"
+        }
+    }
+    </script>
+
+
+<meta name="generator" content="Hugo 0.135.0">
+
+    
+    <meta property="og:url" content="http://localhost:1313/posts/learning-kerberos/learningkerberos/">
+  <meta property="og:site_name" content="Samir Deshar">
+  <meta property="og:title" content="Samir Deshar">
+  <meta property="og:description" content="What is Kerberos? Kerberos is a secure network authentication protocol, widely used as the default authentication mechanism for Microsoft Windows domains. It uses a ticket-based system and strong encryption to authenticate users and services securely. Kerberos improves on older protocols like NTLM by employing third-party ticket authorization and enhanced security measures. However, it still has exploitable vulnerabilities that attackers can leverage.
+How Does Kerberos Work? Kerberos operates as a Single Sign-On (SSO) protocol using a ticket-based authentication scheme. The user’s password is stored as a hashed value in the Security Account Manager (SAM) database on Windows systems:">
+  <meta property="og:locale" content="en_gb">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+
+
+    
+    
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Samir Deshar">
+  <meta name="twitter:description" content="What is Kerberos? Kerberos is a secure network authentication protocol, widely used as the default authentication mechanism for Microsoft Windows domains. It uses a ticket-based system and strong encryption to authenticate users and services securely. Kerberos improves on older protocols like NTLM by employing third-party ticket authorization and enhanced security measures. However, it still has exploitable vulnerabilities that attackers can leverage.
+How Does Kerberos Work? Kerberos operates as a Single Sign-On (SSO) protocol using a ticket-based authentication scheme. The user’s password is stored as a hashed value in the Security Account Manager (SAM) database on Windows systems:">
+
+
+    
+
+    <link rel="canonical" href="http://localhost:1313/posts/learning-kerberos/learningkerberos/">
+    <link href="/style.min.a94d01c45d6488cf633cab302d6fbee459506be059c518b594c69097e4570aeb.css" rel="stylesheet">
+    <link href="/code-highlight.min.706d31975fec544a864cb7f0d847a73ea55ca1df91bf495fd12a177138d807cf.css" rel="stylesheet">
+
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+    <link rel="mask-icon" href="/icons/safari-pinned-tab.svg">
+    <link rel="shortcut icon" href="/favicon.ico">
+
+
+
+
+<link rel="manifest" href="http://localhost:1313/site.webmanifest">
+
+<meta name="msapplication-config" content="/browserconfig.xml">
+<meta name="msapplication-TileColor" content="#2d89ef">
+<meta name="theme-color" content="#434648">
+
+    
+    <link rel="icon" type="image/svg+xml" href="/icons/favicon.svg">
+
+    <script src="../../assets/js/copyCode.js"></script>
+</head>
+<body data-theme = "auto" class="notransition">
+
+<script src="/js/theme.js"></script>
+
+<div class="navbar" role="navigation">
+    <nav class="menu" aria-label="Main Navigation">
+        <a href="http://localhost:1313/" class="logo">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" 
+viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" 
+stroke-linejoin="round" class="feather feather-home">
+<title>Home</title>
+<path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+<polyline points="9 22 9 12 15 12 15 22"></polyline>
+</svg>
+        </a>
+        <input type="checkbox" id="menu-trigger" class="menu-trigger" />
+        <label for="menu-trigger">
+            <span class="menu-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" stroke="currentColor" fill="none" viewBox="0 0 14 14"><title>Menu</title><path stroke-linecap="round" stroke-linejoin="round" d="M10.595 7L3.40726 7"></path><path stroke-linecap="round" stroke-linejoin="round" d="M10.5096 3.51488L3.49301 3.51488"></path><path stroke-linecap="round" stroke-linejoin="round" d="M10.5096 10.4851H3.49301"></path><path stroke-linecap="round" stroke-linejoin="round" d="M0.5 12.5V1.5C0.5 0.947715 0.947715 0.5 1.5 0.5H12.5C13.0523 0.5 13.5 0.947715 13.5 1.5V12.5C13.5 13.0523 13.0523 13.5 12.5 13.5H1.5C0.947715 13.5 0.5 13.0523 0.5 12.5Z"></path></svg>
+            </span>
+        </label>
+
+        <div class="trigger">
+            <ul class="trigger-container">
+                
+                
+                <li>
+                    <a class="menu-link " href="/">
+                        /home
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    <a class="menu-link active" href="/posts/">
+                        /etc/posts
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    <a class="menu-link " href="/pages/about/">
+                        &gt; whoami
+                    </a>
+                    
+                </li>
+                
+                <li class="menu-separator">
+                    <span>|</span>
+                </li>
+                
+                
+            </ul>
+            <a id="mode" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" class="mode-sunny" width="21" height="21" viewBox="0 0 14 14" stroke-width="1">
+<title>LIGHT</title><g><circle cx="7" cy="7" r="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></circle><line x1="7" y1="0.5" x2="7" y2="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="2.4" x2="3.82" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="0.5" y1="7" x2="2.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="11.6" x2="3.82" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="7" y1="13.5" x2="7" y2="11.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="11.6" x2="10.18" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="13.5" y1="7" x2="11.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="2.4" x2="10.18" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line></g></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="mode-moon" width="21" height="21" viewBox="0 0 14 14" stroke-width="1">
+<title>DARK</title><g><circle cx="7" cy="7" r="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></circle><line x1="7" y1="0.5" x2="7" y2="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="2.4" x2="3.82" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="0.5" y1="7" x2="2.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="11.6" x2="3.82" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="7" y1="13.5" x2="7" y2="11.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="11.6" x2="10.18" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="13.5" y1="7" x2="11.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="2.4" x2="10.18" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line></g></svg>
+            </a>
+        </div>
+    </nav>
+</div>
+
+<div class="wrapper post">
+    <main class="page-content" aria-label="Content">
+        <article>
+            <header class="header">
+                <h1 class="header-title"></h1>
+                
+                
+            </header>
+            
+    
+    <details class="toc" ZgotmplZ>
+        <summary><b>Table of Contents</b></summary>
+        <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#what-is-kerberos">What is Kerberos?</a></li>
+        <li><a href="#how-does-kerberos-work">How Does Kerberos Work?</a></li>
+        <li><a href="#common-terminology-in-kerberos">Common Terminology in Kerberos</a></li>
+        <li><a href="#how-kerberos-works-step-by-step">How Kerberos Works: Step-by-Step</a>
+          <ul>
+            <li><a href="#1-authentication-phase-getting-a-tgt">1. <strong>Authentication Phase (Getting a TGT)</strong></a></li>
+            <li><a href="#2-ticket-granting-phase-getting-a-service-ticket">2. <strong>Ticket Granting Phase (Getting a Service Ticket)</strong></a></li>
+            <li><a href="#3-service-access-phase-using-the-service-ticket">3. <strong>Service Access Phase (Using the Service Ticket)</strong></a></li>
+          </ul>
+        </li>
+        <li><a href="#kerberos-tickets-overview">Kerberos Tickets Overview</a></li>
+        <li><a href="#steps-in-kerberos-authentication">Steps in Kerberos Authentication</a></li>
+        <li><a href="#attacking-the-kerberos-protocol">Attacking the Kerberos Protocol</a>
+          <ul>
+            <li><a href="#kerbrute"><strong>Kerbrute</strong></a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </details>
+            <div class="page-content">
+                <h3 id="what-is-kerberos">What is Kerberos?</h3>
+<p>Kerberos is a secure network authentication protocol, widely used as the default authentication mechanism for Microsoft Windows domains. It uses a ticket-based system and strong encryption to authenticate users and services securely. Kerberos improves on older protocols like NTLM by employing third-party ticket authorization and enhanced security measures. However, it still has exploitable vulnerabilities that attackers can leverage.</p>
+<hr>
+<h3 id="how-does-kerberos-work">How Does Kerberos Work?</h3>
+<p>Kerberos operates as a <strong>Single Sign-On (SSO)</strong> protocol using a ticket-based authentication scheme. The user’s password is stored as a hashed value in the Security Account Manager (SAM) database on Windows systems:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">C:\Windows\System32\config\SAM
+</span></span></code></pre></div><p>Key steps in Kerberos authentication:</p>
+<ol>
+<li><strong>Password Hash Encryption</strong>: The user’s password hash is used to encrypt authentication messages.</li>
+<li><strong>Server Decryption</strong>: The server validates the user by decrypting the messages with the stored password hash.</li>
+</ol>
+<hr>
+<h3 id="common-terminology-in-kerberos">Common Terminology in Kerberos</h3>
+<ul>
+<li><strong>Ticket Granting Ticket (TGT)</strong>: An authentication ticket used to request service tickets for accessing domain resources.</li>
+<li><strong>Key Distribution Center (KDC)</strong>: A central service that issues TGTs and service tickets. It includes:
+<ul>
+<li><strong>Authentication Service (AS)</strong>: Issues TGTs to users.</li>
+<li><strong>Ticket Granting Service (TGS)</strong>: Issues service tickets based on valid TGTs.</li>
+</ul>
+</li>
+<li><strong>Service Principal Name (SPN)</strong>: An identifier for a specific service instance linked to a domain service account.</li>
+<li><strong>Long Term Secret Keys</strong>:
+<ul>
+<li><strong>KDC LT Key</strong>: Encrypts TGTs and signs the Privilege Attribute Certificate (PAC).</li>
+<li><strong>Client LT Key</strong>: Encrypts timestamps and session keys during authentication.</li>
+<li><strong>Service LT Key</strong>: Encrypts service tickets and signs the PAC.</li>
+</ul>
+</li>
+<li><strong>Session Key</strong>: A temporary key issued for communication between the client and services.</li>
+<li><strong>Privilege Attribute Certificate (PAC)</strong>: Contains user information, including privileges, signed to validate authenticity.</li>
+</ul>
+<hr>
+<h3 id="how-kerberos-works-step-by-step">How Kerberos Works: Step-by-Step</h3>
+<h4 id="1-authentication-phase-getting-a-tgt">1. <strong>Authentication Phase (Getting a TGT)</strong></h4>
+<ol>
+<li><strong>User Login</strong>: The user enters their password, which is hashed (e.g., SHA-256).</li>
+<li><strong>Request to AS</strong>: The client sends the username to the Authentication Service (AS).</li>
+<li><strong>TGT Creation</strong>: The AS verifies the user, generates a TGT, and encrypts it using the user’s password hash.</li>
+<li><strong>Receive TGT</strong>: The client decrypts the TGT to authenticate and holds the TGT for future service requests.</li>
+</ol>
+<h4 id="2-ticket-granting-phase-getting-a-service-ticket">2. <strong>Ticket Granting Phase (Getting a Service Ticket)</strong></h4>
+<ol>
+<li><strong>Request to TGS</strong>: The client sends the TGT and an Authenticator (timestamp encrypted with the session key) to the TGS.</li>
+<li><strong>Service Ticket Creation</strong>: The TGS verifies the TGT and Authenticator, then issues a Service Ticket encrypted with the target service&rsquo;s key.</li>
+<li><strong>Receive Service Ticket</strong>: The client uses this ticket to access the requested service.</li>
+</ol>
+<h4 id="3-service-access-phase-using-the-service-ticket">3. <strong>Service Access Phase (Using the Service Ticket)</strong></h4>
+<ol>
+<li><strong>Service Request</strong>: The client sends the Service Ticket and a new Authenticator to the target service.</li>
+<li><strong>Access Validation</strong>: The service validates the ticket and Authenticator, granting access if they are valid.</li>
+</ol>
+<hr>
+<h3 id="kerberos-tickets-overview">Kerberos Tickets Overview</h3>
+<ul>
+<li><strong>TGT (Ticket Granting Ticket)</strong>: Used to request service tickets from the KDC.</li>
+<li><strong>Service Tickets</strong>: Specific to services, allowing users to authenticate and access resources.</li>
+</ul>
+<p>Tickets can be represented in different formats (e.g., <code>.kirbi</code> for Rubeus or <code>.ccache</code> for Impacket) and may be base64-encoded for certain attacks.</p>
+<hr>
+<h3 id="steps-in-kerberos-authentication">Steps in Kerberos Authentication</h3>
+<ol>
+<li><strong>AS-REQ</strong>: The client requests a TGT from the AS.</li>
+<li><strong>AS-REP</strong>: The AS sends back an encrypted TGT.</li>
+<li><strong>TGS-REQ</strong>: The client sends the TGT to the TGS with the SPN of the service.</li>
+<li><strong>TGS-REP</strong>: The TGS validates the TGT and sends a Service Ticket.</li>
+<li><strong>AP-REQ</strong>: The client requests the service with the Service Ticket.</li>
+<li><strong>AP-REP</strong>: The service validates the ticket and grants access.</li>
+</ol>
+<hr>
+<h3 id="attacking-the-kerberos-protocol">Attacking the Kerberos Protocol</h3>
+<h4 id="kerbrute"><strong>Kerbrute</strong></h4>
+<p>A powerful tool for enumerating Active Directory users by exploiting Kerberos pre-authentication vulnerabilities.</p>
+<p><strong>Examples</strong>:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">kerbrute userenum --dc CONTROLLER.local -d CONTROLLER.local User.txt
+</span></span><span class="line"><span class="cl">kerbrute userenum users.txt -d spookysec.local --dc 10.10.74.37
+</span></span></code></pre></div><p>These commands attempt to brute-force and enumerate valid usernames by sending requests to the KDC.</p>
+<hr>
+<p>Kerberos remains a critical authentication protocol in modern networks. While it enhances security, understanding its mechanics and vulnerabilities is essential for both defensive and offensive cybersecurity operations.</p>
+
+            </div>
+        </article></main>
+</div>
+<footer class="footer">
+    <span class="footer_item"> </span>
+    &nbsp;
+
+    <div class="footer_social-icons">
+<a href="https://github.com/sameerdeshar" target="_blank" rel="noopener noreferrer me"
+    title="Github">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round">
+    <path
+        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+    </path>
+</svg>
+</a>
+<a href="/index.xml" target="_blank" rel="noopener noreferrer me"
+    title="Rss">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round">
+    <path d="M4 11a9 9 0 0 1 9 9" />
+    <path d="M4 4a16 16 0 0 1 16 16" />
+    <circle cx="5" cy="19" r="1" />
+</svg>
+</a>
+</div>
+    <small class="footer_copyright">
+        © 2024 SAMIR DESHAR.
+        
+    </small>
+</footer><a href="#" title="Go to top" id="totop">
+    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" stroke="currentColor" viewBox="0 96 960 960">
+    <path d="M283 704.739 234.261 656 480 410.261 725.739 656 677 704.739l-197-197-197 197Z"/>
+</svg>
+
+</a>
+
+
+    
+
+
+
+
+    
+    
+        
+    
+
+    
+    
+        
+    
+
+
+
+    
+    <script async src="http://localhost:1313/js/main.js" ></script>
+
+    
+
+</body>
+</html>

@@ -2,13 +2,49 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/tags/aaa/</loc>
+    <lastmod>2024-11-19T12:03:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/authoratative-server/</loc>
+    <lastmod>2024-11-19T12:03:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/curl/</loc>
+    <lastmod>2024-11-19T12:03:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/apm/curl/</loc>
+    <lastmod>2024-11-19T12:03:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/dns/</loc>
+    <lastmod>2024-11-19T12:03:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2024-11-19T12:03:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/ip/</loc>
+    <lastmod>2024-11-19T12:03:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/</loc>
+    <lastmod>2024-11-19T12:03:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/root-servers/</loc>
+    <lastmod>2024-11-19T12:03:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2024-11-19T12:03:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/tld/</loc>
+    <lastmod>2024-11-19T12:03:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/trobuleshoot-connections/</loc>
+    <lastmod>2024-11-19T12:03:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/dns/dns/</loc>
+    <lastmod>2024-11-19T12:03:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/tags/authentication/</loc>
     <lastmod>2024-10-18T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/authorization/</loc>
-    <lastmod>2024-10-18T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/</loc>
     <lastmod>2024-10-18T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/half-proxy/halfproxy/</loc>
@@ -23,9 +59,6 @@
     <loc>http://localhost:1313/posts/apm/oauth/</loc>
     <lastmod>2024-10-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2024-10-18T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/tags/saml/</loc>
     <lastmod>2024-10-18T00:00:00+00:00</lastmod>
   </url><url>
@@ -35,29 +68,9 @@
     <loc>http://localhost:1313/tags/sso/</loc>
     <lastmod>2024-10-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
-    <lastmod>2024-10-18T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/posts/curl/curl/</loc>
   </url><url>
-    <loc>http://localhost:1313/posts/table-of-content/</loc>
-    <lastmod>2023-05-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/math-typesetting/</loc>
-    <lastmod>2023-04-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/markdown-syntax/</loc>
-    <lastmod>2023-02-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/rich-content/</loc>
-    <lastmod>2023-02-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/placeholder-text/</loc>
-    <lastmod>2023-02-07T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/emoji/</loc>
-    <lastmod>2023-02-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/emoji-support/</loc>
-    <lastmod>2023-02-01T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/posts/learning-kerberos/learningkerberos/</loc>
   </url><url>
     <loc>http://localhost:1313/pages/about/</loc>
   </url><url>

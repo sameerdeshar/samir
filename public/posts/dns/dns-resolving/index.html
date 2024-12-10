@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en-gb"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="content-type" content="text/html">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title itemprop="name">Understanding DNS : How the Internet Knows Where to Go | Samir Deshar</title>
+<meta property="og:title" content="Understanding DNS : How the Internet Knows Where to Go | Samir Deshar" />
+<meta name="twitter:title" content="Understanding DNS : How the Internet Knows Where to Go | Samir Deshar" />
+<meta itemprop="name" content="Understanding DNS : How the Internet Knows Where to Go | Samir Deshar" />
+<meta name="application-name" content="Understanding DNS : How the Internet Knows Where to Go | Samir Deshar" />
+<meta property="og:site_name" content="Samir Deshar" />
+
+<meta name="description" content="Minimal Hugo blog theme with light and dark mode support">
+<meta itemprop="description" content="Minimal Hugo blog theme with light and dark mode support" />
+<meta property="og:description" content="Minimal Hugo blog theme with light and dark mode support" />
+<meta name="twitter:description" content="Minimal Hugo blog theme with light and dark mode support" />
+
+<meta property="og:locale" content="en-gb" />
+<meta name="language" content="en-gb" />
+
+  <link rel="alternate" hreflang="en-gb" href="http://localhost:1313/posts/dns/dns-resolving/" title="English" />
+
+
+
+
+
+    
+    
+    
+
+    <meta property="og:type" content="article" />
+    <meta property="og:article:published_time" content=0001-01-01T00:00:00Z />
+    <meta property="article:published_time" content=0001-01-01T00:00:00Z />
+    <meta property="og:url" content="http://localhost:1313/posts/dns/dns-resolving/" />
+
+    
+    <meta property="og:article:author" content="SAMIR DESHAR" />
+    <meta property="article:author" content="SAMIR DESHAR" />
+    <meta name="author" content="SAMIR DESHAR" />
+    
+    
+
+    
+
+    <script defer type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "Article",
+        "headline": "Understanding DNS : How the Internet Knows Where to Go",
+        "author": {
+        "@type": "Person",
+        "name": ""
+        },
+        "datePublished": "0001-01-01",
+        "description": "",
+        "wordCount":  823 ,
+        "mainEntityOfPage": "True",
+        "dateModified": "0001-01-01",
+        "image": {
+        "@type": "imageObject",
+        "url": ""
+        },
+        "publisher": {
+        "@type": "Organization",
+        "name": "Samir Deshar"
+        }
+    }
+    </script>
+
+
+<meta name="generator" content="Hugo 0.135.0">
+
+    
+    <meta property="og:url" content="http://localhost:1313/posts/dns/dns-resolving/">
+  <meta property="og:site_name" content="Samir Deshar">
+  <meta property="og:title" content="Understanding DNS : How the Internet Knows Where to Go">
+  <meta property="og:description" content="Understanding DNS : How the Internet Knows Where to Go The Domain Name System (DNS) is like the internet’s phonebook. It helps translate human-friendly domain names (e.g., samirdeshar.com.np) into machine-friendly IP addresses (e.g., 172.66.44.181) so computers can find and connect to websites or services.
+What Is DNS? Imagine if you had to memorize IP addresses like 172.66.44.181 every time you wanted to visit a website. That would be difficult! DNS solves this by associating domain names with their respective IP addresses. It works in the background whenever you access a website, send an email, or use an online service.">
+  <meta property="og:locale" content="en_gb">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:tag" content="Dns">
+    <meta property="article:tag" content="IP">
+    <meta property="article:tag" content="Tld">
+    <meta property="article:tag" content="Authoratative-Server">
+    <meta property="article:tag" content="Root-Servers">
+    <meta property="article:tag" content="Aaa">
+
+
+    
+    
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Understanding DNS : How the Internet Knows Where to Go">
+  <meta name="twitter:description" content="Understanding DNS : How the Internet Knows Where to Go The Domain Name System (DNS) is like the internet’s phonebook. It helps translate human-friendly domain names (e.g., samirdeshar.com.np) into machine-friendly IP addresses (e.g., 172.66.44.181) so computers can find and connect to websites or services.
+What Is DNS? Imagine if you had to memorize IP addresses like 172.66.44.181 every time you wanted to visit a website. That would be difficult! DNS solves this by associating domain names with their respective IP addresses. It works in the background whenever you access a website, send an email, or use an online service.">
+
+
+    
+
+    <link rel="canonical" href="http://localhost:1313/posts/dns/dns-resolving/">
+    <link href="/style.min.a94d01c45d6488cf633cab302d6fbee459506be059c518b594c69097e4570aeb.css" rel="stylesheet">
+    <link href="/code-highlight.min.706d31975fec544a864cb7f0d847a73ea55ca1df91bf495fd12a177138d807cf.css" rel="stylesheet">
+
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+    <link rel="mask-icon" href="/icons/safari-pinned-tab.svg">
+    <link rel="shortcut icon" href="/favicon.ico">
+
+
+
+
+<link rel="manifest" href="http://localhost:1313/site.webmanifest">
+
+<meta name="msapplication-config" content="/browserconfig.xml">
+<meta name="msapplication-TileColor" content="#2d89ef">
+<meta name="theme-color" content="#434648">
+
+    
+    <link rel="icon" type="image/svg+xml" href="/icons/favicon.svg">
+
+    <script src="../../assets/js/copyCode.js"></script>
+</head>
+<body data-theme = "auto" class="notransition">
+
+<script src="/js/theme.js"></script>
+
+<div class="navbar" role="navigation">
+    <nav class="menu" aria-label="Main Navigation">
+        <a href="http://localhost:1313/" class="logo">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" 
+viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" 
+stroke-linejoin="round" class="feather feather-home">
+<title>Home</title>
+<path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+<polyline points="9 22 9 12 15 12 15 22"></polyline>
+</svg>
+        </a>
+        <input type="checkbox" id="menu-trigger" class="menu-trigger" />
+        <label for="menu-trigger">
+            <span class="menu-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" stroke="currentColor" fill="none" viewBox="0 0 14 14"><title>Menu</title><path stroke-linecap="round" stroke-linejoin="round" d="M10.595 7L3.40726 7"></path><path stroke-linecap="round" stroke-linejoin="round" d="M10.5096 3.51488L3.49301 3.51488"></path><path stroke-linecap="round" stroke-linejoin="round" d="M10.5096 10.4851H3.49301"></path><path stroke-linecap="round" stroke-linejoin="round" d="M0.5 12.5V1.5C0.5 0.947715 0.947715 0.5 1.5 0.5H12.5C13.0523 0.5 13.5 0.947715 13.5 1.5V12.5C13.5 13.0523 13.0523 13.5 12.5 13.5H1.5C0.947715 13.5 0.5 13.0523 0.5 12.5Z"></path></svg>
+            </span>
+        </label>
+
+        <div class="trigger">
+            <ul class="trigger-container">
+                
+                
+                <li>
+                    <a class="menu-link " href="/">
+                        /home
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    <a class="menu-link active" href="/posts/">
+                        /etc/posts
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    <a class="menu-link " href="/pages/about/">
+                        &gt; whoami
+                    </a>
+                    
+                </li>
+                
+                <li class="menu-separator">
+                    <span>|</span>
+                </li>
+                
+                
+            </ul>
+            <a id="mode" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" class="mode-sunny" width="21" height="21" viewBox="0 0 14 14" stroke-width="1">
+<title>LIGHT</title><g><circle cx="7" cy="7" r="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></circle><line x1="7" y1="0.5" x2="7" y2="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="2.4" x2="3.82" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="0.5" y1="7" x2="2.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="11.6" x2="3.82" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="7" y1="13.5" x2="7" y2="11.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="11.6" x2="10.18" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="13.5" y1="7" x2="11.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="2.4" x2="10.18" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line></g></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="mode-moon" width="21" height="21" viewBox="0 0 14 14" stroke-width="1">
+<title>DARK</title><g><circle cx="7" cy="7" r="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></circle><line x1="7" y1="0.5" x2="7" y2="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="2.4" x2="3.82" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="0.5" y1="7" x2="2.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="11.6" x2="3.82" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="7" y1="13.5" x2="7" y2="11.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="11.6" x2="10.18" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="13.5" y1="7" x2="11.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="2.4" x2="10.18" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line></g></svg>
+            </a>
+        </div>
+    </nav>
+</div>
+
+<div class="wrapper post">
+    <main class="page-content" aria-label="Content">
+        <article>
+            <header class="header">
+                <h1 class="header-title">Understanding DNS : How the Internet Knows Where to Go</h1>
+                
+                
+            </header>
+            
+    
+    <details class="toc" ZgotmplZ>
+        <summary><b>Table of Contents</b></summary>
+        <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#understanding-dns--how-the-internet-knows-where-to-go"><strong>Understanding DNS : How the Internet Knows Where to Go</strong></a></li>
+        <li><a href="#what-is-dns"><strong>What Is DNS?</strong></a></li>
+        <li><a href="#how-dns-works-step-by-step"><strong>How DNS Works: Step-by-Step</strong></a></li>
+        <li><a href="#a-practical-example"><strong>A Practical Example</strong></a></li>
+        <li><a href="#the-basics-of-dns-records"><strong>The Basics of DNS Records</strong></a></li>
+        <li><a href="#what-happens-behind-the-scenes"><strong>What Happens Behind the Scenes?</strong></a></li>
+        <li><a href="#real-life-applications-of-dns"><strong>Real-Life Applications of DNS</strong></a></li>
+        <li><a href="#dns-security-concerns"><strong>DNS Security Concerns</strong></a></li>
+        <li><a href="#how-to-check-dns-resolution"><strong>How to Check DNS Resolution</strong></a></li>
+        <li><a href="#what-dig-trace-shows">What <code>dig +trace</code> Shows</a></li>
+        <li><a href="#conclusion"><strong>Conclusion</strong></a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </details>
+            <div class="page-content">
+                <h3 id="understanding-dns--how-the-internet-knows-where-to-go"><strong>Understanding DNS : How the Internet Knows Where to Go</strong></h3>
+<p>The <strong>Domain Name System (DNS)</strong> is like the internet&rsquo;s phonebook. It helps translate human-friendly domain names (e.g., <code>samirdeshar.com.np</code>) into machine-friendly IP addresses (e.g., <code>172.66.44.181</code>) so computers can find and connect to websites or services.</p>
+<hr>
+<h3 id="what-is-dns"><strong>What Is DNS?</strong></h3>
+<p>Imagine if you had to memorize IP addresses like <code>172.66.44.181</code> every time you wanted to visit a website. That would be difficult! DNS solves this by associating domain names with their respective IP addresses. It works in the background whenever you access a website, send an email, or use an online service.</p>
+<p><strong>Key Terms for Beginners</strong>:</p>
+<ul>
+<li><strong>Domain Name</strong>: The human-readable name (e.g., <code>example.com</code>).</li>
+<li><strong>IP Address</strong>: The numerical address of a server (e.g., <code>192.168.1.1</code>).</li>
+<li><strong>DNS Resolver</strong>: A server that helps your device find the IP address for a domain name.</li>
+</ul>
+<hr>
+<h3 id="how-dns-works-step-by-step"><strong>How DNS Works: Step-by-Step</strong></h3>
+<p>Here’s a beginner-friendly breakdown of how DNS translates a domain name to an IP:</p>
+<ol>
+<li>
+<p><strong>You Type a Domain Name</strong>:</p>
+<ul>
+<li>For example, you type <code>samirdeshar.com.np</code> in your browser. Your computer needs to find the IP address for this domain to connect.</li>
+</ul>
+</li>
+<li>
+<p><strong>Query Sent to DNS Resolver</strong>:</p>
+<ul>
+<li>Your device asks a <strong>DNS resolver</strong> (provided by your ISP or a public DNS like Google DNS) to resolve the domain name into an IP address.</li>
+</ul>
+</li>
+<li>
+<p><strong>Resolver Queries Root Servers</strong>:</p>
+<ul>
+<li>If the resolver doesn’t already know the answer, it asks a <strong>root server</strong>. Root servers guide the resolver to the next step by pointing it to the appropriate <strong>Top-Level Domain (TLD) server</strong>.</li>
+</ul>
+</li>
+<li>
+<p><strong>Querying TLD Servers</strong>:</p>
+<ul>
+<li>The resolver contacts a TLD server (e.g., <code>.np</code> for Nepal). TLD servers store information about domains within their extension.</li>
+</ul>
+</li>
+<li>
+<p><strong>Finding Authoritative Nameservers</strong>:</p>
+<ul>
+<li>The TLD server responds with the <strong>authoritative nameserver</strong> for the domain (e.g., Cloudflare for <code>samirdeshar.com.np</code>).</li>
+</ul>
+</li>
+<li>
+<p><strong>Getting the IP Address</strong>:</p>
+<ul>
+<li>The resolver queries the authoritative nameserver, which provides the IP address of the domain.</li>
+</ul>
+</li>
+<li>
+<p><strong>Returning the IP to Your Browser</strong>:</p>
+<ul>
+<li>The resolver sends the IP address back to your browser, which uses it to connect to the server and load the website.</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h3 id="a-practical-example"><strong>A Practical Example</strong></h3>
+<p>Let’s apply this to <code>samirdeshar.com.np</code>:</p>
+<ol>
+<li><strong>You visit <code>samirdeshar.com.np</code></strong>.</li>
+<li><strong>Your browser sends a request to a DNS resolver</strong> (e.g., Google DNS at <code>8.8.8.8</code>).</li>
+<li><strong>The resolver contacts a root server</strong> for <code>.np</code>.</li>
+<li><strong>The root server directs the resolver to the <code>.np</code> TLD servers</strong>.</li>
+<li><strong>The <code>.np</code> TLD server directs the resolver to Cloudflare’s DNS servers</strong>, which manage <code>samirdeshar.com.np</code>.</li>
+<li><strong>Cloudflare’s server provides the IP address</strong> (e.g., <code>172.66.44.181</code>).</li>
+<li><strong>The browser connects to <code>172.66.44.181</code></strong> to load the website.</li>
+</ol>
+<hr>
+<h3 id="the-basics-of-dns-records"><strong>The Basics of DNS Records</strong></h3>
+<p>DNS uses different types of records to manage domains. Here are the most common:</p>
+<ul>
+<li><strong>A Record</strong>: Maps a domain to an IPv4 address.</li>
+<li><strong>AAAA Record</strong>: Maps a domain to an IPv6 address.</li>
+<li><strong>CNAME Record</strong>: Creates an alias for another domain.</li>
+<li><strong>MX Record</strong>: Directs email to a mail server.</li>
+<li><strong>NS Record</strong>: Points to the nameservers for a domain.</li>
+</ul>
+<hr>
+<h3 id="what-happens-behind-the-scenes"><strong>What Happens Behind the Scenes?</strong></h3>
+<p>DNS uses <strong>tags</strong> and <strong>zones</strong> to organize and manage data:</p>
+<ol>
+<li><strong>Zones</strong> define administrative boundaries, such as the <code>.np</code> zone for Nepal.</li>
+<li><strong>Tags</strong> (like VLAN tagging in networks) help identify traffic and maintain separation, especially in complex environments like hosting multiple subdomains.</li>
+</ol>
+<hr>
+<h3 id="real-life-applications-of-dns"><strong>Real-Life Applications of DNS</strong></h3>
+<ol>
+<li><strong>Browsing Websites</strong>:
+<ul>
+<li>DNS makes accessing <code>example.com</code> possible without memorizing IP addresses.</li>
+</ul>
+</li>
+<li><strong>Email Delivery</strong>:
+<ul>
+<li>MX records ensure emails reach the correct servers.</li>
+</ul>
+</li>
+<li><strong>Load Balancing</strong>:
+<ul>
+<li>DNS directs users to the nearest server for faster responses.</li>
+</ul>
+</li>
+<li><strong>Content Delivery Networks (CDNs)</strong>:
+<ul>
+<li>DNS routes requests to distributed servers based on geography.</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h3 id="dns-security-concerns"><strong>DNS Security Concerns</strong></h3>
+<ol>
+<li><strong>DNS Spoofing</strong>:
+<ul>
+<li>Hackers can redirect users to malicious websites. <strong>DNSSEC</strong> (DNS Security Extensions) helps by validating responses.</li>
+</ul>
+</li>
+<li><strong>Cache Poisoning</strong>:
+<ul>
+<li>Attackers inject false data into DNS caches. Using trusted resolvers mitigates this.</li>
+</ul>
+</li>
+<li><strong>DDoS Attacks</strong>:
+<ul>
+<li>Public DNS servers can be overloaded. Rate limiting and filtering help protect them.</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h3 id="how-to-check-dns-resolution"><strong>How to Check DNS Resolution</strong></h3>
+<p>Here are some commands to explore DNS on your system:</p>
+<ul>
+<li>
+<p><strong>Trace DNS Resolution/(trace the path)</strong>:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">dig +trace samirdeshar.com.np
+</span></span></code></pre></div></li>
+<li>
+<p><strong>Query Root Servers</strong>:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">dig @a.root-servers.net samirdeshar.com.np
+</span></span></code></pre></div></li>
+<li>
+<p><strong>Querying the Authoritative Servers directly</strong>:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">dig @jobs.ns.cloudflare.com samirdeshar.com.np
+</span></span></code></pre></div></li>
+<li>
+<p><strong>Get IP Address</strong>:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">dig samirdeshar.com.np +short
+</span></span></code></pre></div></li>
+<li>
+<p><strong>Clean output (just the IP)</strong>:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">dig @jobs.ns.cloudflare.com samirdeshar.com.np +short
+</span></span></code></pre></div></li>
+</ul>
+<h3 id="what-dig-trace-shows">What <code>dig +trace</code> Shows</h3>
+<p>The <code>dig +trace</code> command shows each step in the DNS resolution path, from root servers to the authoritative server:</p>
+<ul>
+<li><strong>Root Servers</strong>: The first part of the output shows which root server was queried and which <code>.np</code> TLD servers it provided in response.</li>
+<li><strong><code>.np</code> TLD Servers</strong>: The next section shows the <code>.np</code> servers directing the resolver to the authoritative Cloudflare DNS servers.</li>
+<li><strong>Authoritative Server</strong>: Finally, the output shows Cloudflare’s authoritative server providing the IP addresses of <code>samirdeshar.com.np</code>.</li>
+</ul>
+<p>In summary, DNS resolution goes through these steps: <strong>Root Servers</strong> → <strong>.np TLD Servers</strong> → <strong>Authoritative Cloudflare Servers</strong> → <strong>IP Address for the website</strong>.</p>
+<hr>
+<h3 id="conclusion"><strong>Conclusion</strong></h3>
+<p>DNS is the silent engine behind the internet. Without it, we&rsquo;d be stuck memorizing IP addresses. Whether you’re a beginner or a seasoned techie, understanding DNS is crucial for navigating and managing networks. From resolving your favorite websites to enabling secure communication, DNS underpins how we interact with the web today.</p>
+
+            </div>
+        </article></main>
+</div>
+<footer class="footer">
+    <span class="footer_item"> </span>
+    &nbsp;
+
+    <div class="footer_social-icons">
+<a href="https://github.com/sameerdeshar" target="_blank" rel="noopener noreferrer me"
+    title="Github">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round">
+    <path
+        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+    </path>
+</svg>
+</a>
+<a href="/index.xml" target="_blank" rel="noopener noreferrer me"
+    title="Rss">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round">
+    <path d="M4 11a9 9 0 0 1 9 9" />
+    <path d="M4 4a16 16 0 0 1 16 16" />
+    <circle cx="5" cy="19" r="1" />
+</svg>
+</a>
+</div>
+    <small class="footer_copyright">
+        © 2024 SAMIR DESHAR.
+        
+    </small>
+</footer><a href="#" title="Go to top" id="totop">
+    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" stroke="currentColor" viewBox="0 96 960 960">
+    <path d="M283 704.739 234.261 656 480 410.261 725.739 656 677 704.739l-197-197-197 197Z"/>
+</svg>
+
+</a>
+
+
+    
+
+
+
+
+    
+    
+        
+    
+
+    
+    
+        
+    
+
+
+
+    
+    <script async src="http://localhost:1313/js/main.js" ></script>
+
+    
+
+</body>
+</html>

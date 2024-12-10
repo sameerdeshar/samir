@@ -7,7 +7,8 @@ tags:
   - root-servers
   - aaa
 title: "Understanding DNS : How the Internet Knows Where to Go"
-date: 2024-12-10T11:18:00
+date: 2024-11-19T12:03:00
+author: Samir Deshar
 ---
 ### **Understanding DNS : How the Internet Knows Where to Go**
 

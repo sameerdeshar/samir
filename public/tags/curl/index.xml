@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Curl on Samir Deshar</title>
+    <link>http://localhost:1313/tags/curl/</link>
+    <description>Recent content in Curl on Samir Deshar</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Tue, 19 Nov 2024 12:03:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/curl/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CURL Cheatsheet</title>
+      <link>http://localhost:1313/posts/apm/curl/</link>
+      <pubDate>Tue, 19 Nov 2024 12:03:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/apm/curl/</guid>
+      
+      <description>&lt;h3 id=&#34;save-output-to-a-file&#34;&gt;&lt;strong&gt;Save Output to a File&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Command:&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;curl -o output.html http://example.com
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;What it does:&lt;/strong&gt;&lt;br&gt;
+Saves the content of the webpage to a file named &lt;code&gt;output.html&lt;/code&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;follow-redirects&#34;&gt;&lt;strong&gt;Follow Redirects&lt;/strong&gt;&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;curl -L http://example.com
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;What it does:&lt;/strong&gt;&lt;br&gt;
+Follows any HTTP redirects and fetches the final destination page.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;show-http-headers&#34;&gt;&lt;strong&gt;Show HTTP Headers&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Command:&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;curl -I http://example.com
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;What it does:&lt;/strong&gt;&lt;br&gt;
+Displays only the HTTP headers (e.g., status code, content type) of the requested page.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;download-a-file&#34;&gt;&lt;strong&gt;Download a File&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Command:&lt;/strong&gt;&lt;/p&gt;</description>
+      
+    </item>
+    
+  </channel>
+</rss>
