@@ -1,27 +1,33 @@
-## HOME ##
-- id: "home.home"
-  translation: "Inizio"
-  
-- id: "home.recent_posts"
-  translation: "Articoli Recenti"
+- id: prev_page
+  translation: "Precedente"
 
-- id: "home.see_all_posts"
-  translation: "Visualizza tutti gli articoli"
+- id: next_page
+  translation: "Successivo"
 
-## SINGLE ##
-- id: "single.table_of_contents"
-  translation: "Sommario"
+- id: read_time
+  translation:
+    one: "1 minuto"
+    other: "{{ .Count }} minuti"
 
-## FOOTER ##
-- id: "footer.go_to_top"
-  translation: "Torna all'inizio"
+- id: words
+  translation:
+    one : "parola"
+    other: "{{ .Count }} parole"
 
-- id: "footer.disclaimer"
-  translation: "Generato dal tema <a href=\"https://github.com/hugo-sid/hugo-blog-awesome\" target=\"_blank\" rel=\"noopener\">Hugo blog awesome</a>."
+- id: toc
+  translation: "Indice contenuti"
 
-## ERRORS ##
-- id: "errors.404"
-  translation: "404 NON TROVATO"
+- id: translations
+  translation: "Traduzioni"
 
-- id: "errors.404_description"
-  translation: "Hai appena svoltato in una strada che non esiste."
+- id: home
+  translation: "Home"
+
+- id: edit_post
+  translation: "Modifica"
+
+- id: code_copy
+  translation: "copia"
+
+- id: code_copied
+  translation: "copiato!"

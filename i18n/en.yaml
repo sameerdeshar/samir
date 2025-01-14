@@ -1,0 +1,33 @@
+- id: prev_page
+  translation: "Agadi wala hernu pugena talai?"
+
+- id: next_page
+  translation: "Arko herxas?"
+
+- id: read_time
+  translation:
+    one : "1 min"
+    other: "{{ .Count }} min"
+
+- id: words
+  translation:
+    one : "word"
+    other: "{{ .Count }} words"
+
+- id: toc
+  translation: "Tomatos and Cauliflower"
+
+- id: translations
+  translation: "Translations"
+
+- id: home
+  translation: "Ghar"
+
+- id: edit_post
+  translation: "I am always right"
+
+- id: code_copy
+  translation: "Code bokerw laija"
+
+- id: code_copied
+  translation: "Khub garis"

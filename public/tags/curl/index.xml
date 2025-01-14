@@ -1,39 +1,60 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Curl on Samir Deshar</title>
-    <link>http://localhost:1313/tags/curl/</link>
-    <description>Recent content in Curl on Samir Deshar</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-gb</language>
-    <lastBuildDate>Tue, 19 Nov 2024 12:03:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/curl/index.xml" rel="self" type="application/rss+xml" />
+    <title>Curl on Samir Deshar aka Don Bhai</title>
+    <link>//localhost:1313/tags/curl/</link>
+    <description>Recent content in Curl on Samir Deshar aka Don Bhai</description>
+    <image>
+      <title>Samir Deshar aka Don Bhai</title>
+      <url>//localhost:1313/images/papermod-cover.png</url>
+      <link>//localhost:1313/images/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- 0.135.0</generator>
+    <language>en</language>
+    <copyright>Samir Deshar</copyright>
+    <lastBuildDate>Fri, 20 Dec 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/curl/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>CURL Cheatsheet</title>
-      <link>http://localhost:1313/posts/apm/curl/</link>
-      <pubDate>Tue, 19 Nov 2024 12:03:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/posts/apm/curl/</guid>
-      
-      <description>&lt;h3 id=&#34;save-output-to-a-file&#34;&gt;&lt;strong&gt;Save Output to a File&lt;/strong&gt;&lt;/h3&gt;
-&lt;p&gt;&lt;strong&gt;Command:&lt;/strong&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;curl -o output.html http://example.com
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;What it does:&lt;/strong&gt;&lt;br&gt;
-Saves the content of the webpage to a file named &lt;code&gt;output.html&lt;/code&gt;.&lt;/p&gt;
-&lt;h3 id=&#34;follow-redirects&#34;&gt;&lt;strong&gt;Follow Redirects&lt;/strong&gt;&lt;/h3&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;curl -L http://example.com
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;What it does:&lt;/strong&gt;&lt;br&gt;
-Follows any HTTP redirects and fetches the final destination page.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h3 id=&#34;show-http-headers&#34;&gt;&lt;strong&gt;Show HTTP Headers&lt;/strong&gt;&lt;/h3&gt;
-&lt;p&gt;&lt;strong&gt;Command:&lt;/strong&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;curl -I http://example.com
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;What it does:&lt;/strong&gt;&lt;br&gt;
-Displays only the HTTP headers (e.g., status code, content type) of the requested page.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h3 id=&#34;download-a-file&#34;&gt;&lt;strong&gt;Download a File&lt;/strong&gt;&lt;/h3&gt;
-&lt;p&gt;&lt;strong&gt;Command:&lt;/strong&gt;&lt;/p&gt;</description>
-      
+      <title>What is SSO</title>
+      <link>//localhost:1313/posts/apm/sso/</link>
+      <pubDate>Fri, 20 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/apm/sso/</guid>
+      <description>This is sparta</description>
     </item>
-    
+    <item>
+      <title>What is SSO</title>
+      <link>//localhost:1313/posts/curl/</link>
+      <pubDate>Fri, 20 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/curl/</guid>
+      <description>This is sparta</description>
+    </item>
+    <item>
+      <title>What is SSO</title>
+      <link>//localhost:1313/posts/dns/</link>
+      <pubDate>Fri, 20 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/dns/</guid>
+      <description>This is sparta</description>
+    </item>
+    <item>
+      <title>What is SSO</title>
+      <link>//localhost:1313/posts/halfproxy/</link>
+      <pubDate>Fri, 20 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/halfproxy/</guid>
+      <description>This is sparta</description>
+    </item>
+    <item>
+      <title>What is SSO</title>
+      <link>//localhost:1313/posts/learningkerberos/</link>
+      <pubDate>Fri, 20 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/learningkerberos/</guid>
+      <description>This is sparta</description>
+    </item>
+    <item>
+      <title>What is OAuth</title>
+      <link>//localhost:1313/posts/apm/oauth/</link>
+      <pubDate>Fri, 20 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/apm/oauth/</guid>
+      <description>This is sparta</description>
+    </item>
   </channel>
 </rss>
